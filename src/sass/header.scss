@@ -1,0 +1,48 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+header {
+    background-color: #155F87;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    button {
+        height: 50px;
+        width: 200px;
+        border-radius: 10px;
+    }
+}
+#logo {
+    margin-left: 50px;
+}
+#buttons {
+    display: flex;
+    align-items: end;
+    margin-right: 50px;
+    height: 70%;
+    gap: 20px;
+}
+#button-suscribe {
+    transition: ease-in-out all .4s;
+    width: 50px;
+    display: flex;
+    align-items: center;
+}
+#button-suscribe:hover {
+    width: 200px;
+}
+#button-star-figure {
+    float: left;
+    width: 40px;
+}
+#button-suscribe-side{
+    font-size: 25px;
+    margin-left: 10px;
+    overflow: hidden;
+}
+#button-suscribe-side:hover{
+    opacity: 1;
+}
