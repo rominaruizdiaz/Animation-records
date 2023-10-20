@@ -34,8 +34,6 @@
   font-size: 5.5rem;
   background-color: transparent;
   border-radius: 50%;
-  padding: 2px;
-  font-weight: 600;
   cursor: pointer;
   color: rgb(126, 23, 23);
   transform: translate(-50%, -50%);
@@ -50,11 +48,12 @@
 
 .btn-left {
   left: 5rem;
-  margin-left: 5%;
+  margin-left: 12rem;
 }
 
 .btn-right {
   right: 5rem;
+  margin-right: 12rem;
 }
 
 /*# sourceMappingURL=styles.css.map */
