@@ -1,11 +1,13 @@
-body {
-  padding: 0;
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 header {
   background-color: #155F87;
-  height: 20vh;
+  height: 17vh;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -14,6 +16,14 @@ header button {
   height: 50px;
   width: 200px;
   border-radius: 10px;
+  border: none;
+  filter: brightness(0.9);
+}
+header button:hover {
+  filter: brightness(1.1);
+}
+header a {
+  text-decoration: none;
 }
 
 #logo {
@@ -28,11 +38,16 @@ header button {
   gap: 20px;
 }
 
+#home {
+  background-color: #0096E7;
+}
+
 #button-suscribe {
   transition: ease-in-out all 0.4s;
   width: 50px;
   display: flex;
   align-items: center;
+  background-color: #47D47F;
 }
 
 #button-suscribe:hover {
@@ -42,16 +57,18 @@ header button {
 #button-star-figure {
   float: left;
   width: 40px;
+  margin-left: 5px;
 }
 
 #button-suscribe-side {
   font-size: 25px;
-  margin-left: 10px;
+  margin-left: 20px;
   overflow: hidden;
+  color: #ffef15;
 }
 
-#button-suscribe-side:hover {
-  opacity: 1;
+.categories-drop-down-button {
+  background-color: #00C1DD;
 }
 
 /*# sourceMappingURL=styles.css.map */
