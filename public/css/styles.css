@@ -1,2 +1,41 @@
+.form-container {
+  background-color: #7CEA72;
+  text-align: center;
+  margin-left: 19vw;
+  margin-right: 19vw;
+  border-radius: 10px;
+  padding: 1px;
+  line-height: 25px;
+}
+
+button {
+  background-color: #5CCD5A;
+  border-radius: 10px;
+  border: 1.4px solid black;
+  width: 13vw;
+}
+
+input {
+  width: 25vw;
+  background-color: #EBFFD3;
+  border-radius: 10px;
+  border: 1.4px solid black;
+}
+
+.exclusivo {
+  color: rgb(34, 33, 33);
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+.cancela {
+  font-size: 0.7rem;
+  text-align: end;
+  margin-right: 10vw;
+}
+
+.suscribir {
+  color: #E5FF48;
+}
 
 /*# sourceMappingURL=styles.css.map */
