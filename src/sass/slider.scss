@@ -1,10 +1,10 @@
 .container-carousel {
-  width: 262rem;
+  width: 261rem;
   height: 75rem;
   margin: 0 auto;
   overflow: hidden;
   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.66);
-  border-radius: 15px;
+  border-radius: 5rem;
   margin-top: 10%;
   position: relative;
   display: flex;
@@ -17,11 +17,10 @@
 }
 
 .slider-section {
- 
+  width: 100%;
   height: 100%;
 
   img {
-    
     height: 100%;
     object-fit: cover;
     border-radius: 15px;
@@ -32,7 +31,7 @@
 .btn-right {
   display: flex;
   position: absolute;
-  top: 50%;
+  top: 45%;
   font-size: 5.5rem;
   background-color: transparent;
   border-radius: 50%;
@@ -51,10 +50,37 @@
 .btn-left {
   left: 5rem;
   margin-left:12rem;
-  
 }
 
 .btn-right {
   right: 5rem;
   margin-right:12rem;
+}
+
+.carousel-indicators {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  
+  margin-top: 5%;
+
+     span {
+      display: inline-block;
+      width: 3.5rem;
+      height: 3.5rem;
+      background-color: #ccc;
+      border-radius: 50%;
+      margin-right: 2rem;
+      &:hover {
+        background-color: #422323;
+        width: 8rem;
+        height: 3.5rem;
+        border-radius: 30%;
+      }
+    }
+    
+
+  
 }

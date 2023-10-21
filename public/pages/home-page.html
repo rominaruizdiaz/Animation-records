@@ -1,37 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link rel="stylesheet" href="./../css/styles.css">
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./../css/styles.css" />
+  </head>
+  <body>
     <section class="container-carousel">
-        <div class="carruseles">
-            <div class="slider-section">
-                <img src="../assets/imagenes/banner1.png" alt="...">
-            </div>
-            <div class="slider-section">
-                <img src="../assets/imagenes/banner2.png" alt="...">
-            </div>
-            <div class="slider-section">
-                <img src="../assets/imagenes/banner3.png" alt="...">
-            </div>
-            <div class="slider-section">
-                <img src="../assets/imagenes/banner4.png" alt="...">
-            </div>
-            <div class="slider-section">
-                <img src="../assets/imagenes/banner5.png" alt="...">
-            </div>
-            <div class="slider-section">
-                <img src="../assets/imagenes/banner6.png" alt="...">
-            </div>
+      <div class="carruseles">
+        <div class="slider-section">
+          <img class="mySlides" src="../assets/imagenes/banner1.png" alt="..." />
         </div>
- </section>
-    <div class="btn-left" id="btn-left"><i class="fas   fa-chevron-left"></i></div>
-    <div class="btn-right" id="btn-right"><i class="fas fa-chevron-right"></i></div>
+        <div class="slider-section">
+          <img class="mySlides" src="../assets/imagenes/banner2.png" alt="..." />
+        </div>
+        <div class="slider-section">
+          <img class="mySlides" src="../assets/imagenes/banner3.png" alt="..." />
+        </div>
+        <div class="slider-section">
+          <img class="mySlides" src="../assets/imagenes/banner4.png" alt="..." />
+        </div>
+        <div class="slider-section">
+          <img class="mySlides" src="../assets/imagenes/banner5.png" alt="..." />
+        </div>
+        <div class="slider-section">
+          <img class="mySlides" src="../assets/imagenes/banner6.png" alt="..." />
+        </div>
+      </div>
+    </section>
+
+    <div class="btn-left" id="btn-left">
+        <i class="fas fa-chevron-left" onclick="plusDivs(-1)"></i>
+    </div>
+    <div class="btn-right" id="btn-right">
+        <i class="fas fa-chevron-right" onclick="plusDivs(1)"></i></i>
+    </div>
+    <i class="fas fa-chevron-left" onclick="plusDivs(-1)"></i>
+</div>
+    <section  id="carouselExampleIndicators">
+  
+      <div class="carousel-indicators">
+        <span class="demo" onclick="currentDiv(1)"></span>
+        <span class="demo" onclick="currentDiv(2)"></span>
+        <span class="demo" onclick="currentDiv(3)"></span>
+        <span  class="demo" onclick="currentDiv(4)"></span>
+        <span class="demo"  onclick="currentDiv(5)"></span>
+        <span class="demo" onclick="currentDiv(6)"></span>
+        
+      </div>
+    </section>   
+          </div>
+        </div>            
     <script src="../js/slider.js"></script>
-</body>
+    <script src="../js/slider-indicators.js"></script>
+  </body>
 </html>

@@ -1,11 +1,11 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css");
 .container-carousel {
-  width: 262rem;
+  width: 261rem;
   height: 75rem;
   margin: 0 auto;
   overflow: hidden;
   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.66);
-  border-radius: 15px;
+  border-radius: 5rem;
   margin-top: 10%;
   position: relative;
   display: flex;
@@ -18,6 +18,7 @@
 }
 
 .slider-section {
+  width: 100%;
   height: 100%;
 }
 .slider-section img {
@@ -30,7 +31,7 @@
 .btn-right {
   display: flex;
   position: absolute;
-  top: 50%;
+  top: 45%;
   font-size: 5.5rem;
   background-color: transparent;
   border-radius: 50%;
@@ -54,6 +55,29 @@
 .btn-right {
   right: 5rem;
   margin-right: 12rem;
+}
+
+.carousel-indicators {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin-top: 5%;
+}
+.carousel-indicators span {
+  display: inline-block;
+  width: 3.5rem;
+  height: 3.5rem;
+  background-color: #ccc;
+  border-radius: 50%;
+  margin-right: 2rem;
+}
+.carousel-indicators span:hover {
+  background-color: #422323;
+  width: 8rem;
+  height: 3.5rem;
+  border-radius: 30%;
 }
 
 /*# sourceMappingURL=styles.css.map */
