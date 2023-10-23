@@ -1,2 +1,36 @@
+#container {
+	background-color: #155F87;
+  text-align: center;
+  margin: auto;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.facebook {
+	float: left;
+  margin: 15px;
+}
+
+.instagram {
+	float: left;
+  margin: 15px;
+}
+.youtube {
+	float: left;
+  margin: 15px;
+}
+
+.github {
+	float: left;
+  margin: 15px;
+}
+
+.copyright {
+  margin: 10px;
+  font-style: normal;
+  color: aliceblue;
+}
 
 /*# sourceMappingURL=styles.css.map */
