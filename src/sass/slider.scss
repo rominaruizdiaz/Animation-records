@@ -1,11 +1,11 @@
 .container-carousel {
-  width: 261rem;
-  height: 75rem;
+  width: 90%;
+  height: 50vh;
   margin: 0 auto;
   overflow: hidden;
   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.66);
   border-radius: 5rem;
-  margin-top: 10%;
+  margin-top: 5vh;
   position: relative;
   display: flex;
 }
@@ -19,7 +19,6 @@
 .slider-section {
   width: 100%;
   height: 100%;
-  
 
   img {
     height: 100%;
@@ -28,8 +27,7 @@
   }
 }
 
-#btn-left,
-#btn-right {
+#btn-left, #btn-right {
   display: flex;
   position: absolute;
   top: 45%;
@@ -39,7 +37,7 @@
   cursor: pointer;
   color: rgb(126, 23, 23);
   transform: translate(-50%, -50%);
-  transition: 5s ease;
+  transition: 1.3s ease;
   user-select: none;
 
   &:hover {
@@ -47,7 +45,6 @@
     color: azure;
   }
 }
-
 
 #btn-left {
   left: 5rem;
@@ -64,32 +61,27 @@
   align-items: center;
   list-style: none;
   padding: 0;
-  margin-top: 1rem;
-  
-  }
 
-  span {
+  > span {
     display: inline-block;
-    width: 3.5rem;
-    height: 3.5rem;
+    width: 2rem;
+    height: 2rem;
     background-color: #ccc;
     border-radius: 50%;
-    margin-right: 4rem;
+    margin: 1rem;
     &.w3-white {
       background-color: #7CEA72;
-      transform: scaleX(2);
+      transform: scale(1.1);
       position: relative;
-      width: 7rem; 
-      height: 3.75rem; 
+      width: 4rem; 
       border: none;
       border-radius: 1.5rem; 
-      margin:9rem !important
+      margin:3rem !important;
     }
 
     &:hover {
       background-color: #7CEA72;
-      width: 5rem;
-      height: 5rem;
+      transform: scale(1.2);
      
     }
     @media (max-width: 1366px) {
@@ -123,10 +115,7 @@
         margin-right: 2rem;
       }
     }
-    
-   
-    }
-    
+
     @media (max-width: 950px) {
       .container-carousel {
         width: 100%;
@@ -143,8 +132,7 @@
         height: auto;
       }
     
-      .btn-left,
-      .btn-right {
+      .btn-left, .btn-right {
         font-size: 2rem !important;
         margin-left: 2rem !important;
         margin-right: 2rem !important;
@@ -194,6 +182,8 @@
       }
 
     }
+  }
+}
 
 
   
