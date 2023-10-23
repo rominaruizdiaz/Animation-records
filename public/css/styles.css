@@ -527,4 +527,9 @@ input {
   color: #E5FF48;
 }
 
+#container {
+  background-color: rgb(38, 0, 255);
+  margin: 20px;
+}
+
 /*# sourceMappingURL=styles.css.map */
