@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css");
 * {
   margin: 0;
@@ -105,15 +103,6 @@ header > nav button {
 }
 
 .container-carousel {
-<<<<<<< HEAD
-  width: 71rem;
-  height: 20.5rem;
-  margin: 0 auto;
-  overflow: hidden;
-  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.66);
-  border-radius: 2rem;
-  margin-top: 2%;
-=======
   width: 90%;
   height: 50vh;
   margin: 0 auto;
@@ -121,7 +110,6 @@ header > nav button {
   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.66);
   border-radius: 5rem;
   margin-top: 5vh;
->>>>>>> 34dc3951f20e9965866d9cac7c0bfaa28ac96431
   position: relative;
   display: flex;
 }
@@ -130,6 +118,10 @@ header > nav button {
   display: flex;
 }
 
+.slider-section {
+  width: 100%;
+  height: 100%;
+}
 .slider-section img {
   height: 100%;
   object-fit: cover;
@@ -171,44 +163,24 @@ header > nav button {
 }
 .carousel-indicators > span {
   display: inline-block;
-<<<<<<< HEAD
-  width: 1rem;
-  height: 1rem;
-  background-color: #ccc;
-  border-radius: 50%;
-  margin-right: 2rem;
-=======
   width: 2rem;
   height: 2rem;
   background-color: #ccc;
   border-radius: 50%;
   margin: 1rem;
->>>>>>> 34dc3951f20e9965866d9cac7c0bfaa28ac96431
 }
 .carousel-indicators > span.w3-white {
   background-color: #7CEA72;
   transform: scale(1.1);
   position: relative;
-<<<<<<< HEAD
-  width: 2rem;
-  height: 1.5rem;
-  border: none;
-  border-radius: 0.5rem;
-=======
   width: 4rem;
   border: none;
   border-radius: 1.5rem;
->>>>>>> 34dc3951f20e9965866d9cac7c0bfaa28ac96431
   margin: 3rem !important;
 }
 .carousel-indicators > span:hover {
   background-color: #7CEA72;
-<<<<<<< HEAD
-  width: 1.5rem;
-  height: 1.5rem;
-=======
   transform: scale(1.2);
->>>>>>> 34dc3951f20e9965866d9cac7c0bfaa28ac96431
 }
 @media (max-width: 1366px) {
   .carousel-indicators > span .container-carousel {
@@ -289,7 +261,8 @@ header > nav button {
     height: 1.5rem;
     margin-right: 2rem;
   }
-=======
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -512,8 +485,8 @@ header > nav button {
 .category-toy-story:hover h2 {
   opacity: 1;
   transform: scale(1);
->>>>>>> origin/feature-main-cards
-=======
+}
+
 .form-container {
   background-color: #7CEA72;
   text-align: center;
@@ -552,7 +525,6 @@ input {
 
 .suscribir {
   color: #E5FF48;
->>>>>>> origin/feature-main-form
 }
 
 /*# sourceMappingURL=styles.css.map */
