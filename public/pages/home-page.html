@@ -7,41 +7,82 @@
     <link rel="stylesheet" href="./../css/styles.css">
 </head>
 <body>
-    <header>
-        <img src="/public/assets/imagenes/logo.png" alt="disney shop logo">
-        <nav>
-            <ul>
-                <li>
-                    <button id="home">
-                    Inicio
+  <header>
+    <img src="/public/assets/imagenes/logo.png" alt="disney shop logo">
+    <nav>
+        <ul>
+            <li>
+                <button id="home">
+                Inicio
+                </button>
+            </li>
+            <li>
+                <button id="categories" class="categories-drop-down-button">categories</button>
+                <ul>
+                    <li><a href="">Red</a></li>
+                    <li><a href="">Cars</a></li>
+                    <li><a href="">Buscando a Nemo</a></li>
+                    <li><a href="">Elementals</a></li>
+                    <li><a href="">Up</a></li>
+                    <li><a href="">Toy Story</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">
+                    <button id="button-suscribe">
+                        <img id="button-star-figure" src="/public/assets/imagenes/Star.png" alt="star">
+                        <div id="button-suscribe-side">
+                        Suscribe
+                        </div>
                     </button>
-                </li>
-                <li>
-                    <button id="categories" class="categories-drop-down-button">categories</button>
-                    <ul>
-                        <li><a href="">Red</a></li>
-                        <li><a href="">Cars</a></li>
-                        <li><a href="">Buscando a Nemo</a></li>
-                        <li><a href="">Elementals</a></li>
-                        <li><a href="">Up</a></li>
-                        <li><a href="">Toy Story</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#">
-                        <button id="button-suscribe">
-                            <img id="button-star-figure" src="/public/assets/imagenes/Star.png" alt="star">
-                            <div id="button-suscribe-side">
-                            Suscribe
-                            </div>
-                        </button>
-                    </a>
-                </li>
-                <li>
-                    <img src="/public/assets/imagenes/shop.png" alt="">
-                </li>
-            </ul>
-        </nav>
-    </header>
+                </a>
+            </li>
+            <li>
+                <img src="/public/assets/imagenes/shop.png" alt="">
+            </li>
+        </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="container-carousel">
+      <div class="carruseles">
+        <div class="slider-section">
+          <img class="mySlides" src="../assets/imagenes/banner1.png" alt="..." />
+        </div>
+        <div class="slider-section">
+          <img class="mySlides" src="../assets/imagenes/banner2.png" alt="..." />
+        </div>
+        <div class="slider-section">
+          <img class="mySlides" src="../assets/imagenes/banner3.png" alt="..." />
+        </div>
+        <div class="slider-section">
+          <img class="mySlides" src="../assets/imagenes/banner4.png" alt="..." />
+        </div>
+        <div class="slider-section">
+          <img class="mySlides" src="../assets/imagenes/banner5.png" alt="..." />
+        </div>
+        <div class="slider-section">
+          <img class="mySlides" src="../assets/imagenes/banner6.png" alt="..." />
+        </div>
+      </div>
+    </section>
+    <div class="btn-left" id="btn-left">
+      <i class="fas fa-chevron-left" onclick="plusDivs(-1)"></i>
+    </div>
+    <div class="btn-right" id="btn-right">
+      <i class="fas fa-chevron-right" onclick="plusDivs(1)"></i>
+    </div>
+    <section id="carouselExampleIndicators">
+      <div class="carousel-indicators">
+        <span class="demo" onclick="currentDiv(1)"></span>
+        <span class="demo" onclick="currentDiv(2)"></span>
+        <span class="demo" onclick="currentDiv(3)"></span>
+        <span class="demo" onclick="currentDiv(4)"></span>
+        <span class="demo"  onclick="currentDiv(5)"></span>
+        <span class="demo" onclick="currentDiv(6)"></span>
+      </div>
+    </section>           
+    <script src="../js/slider-indicators.js"></script>
+  </main>
 </body>
 </html>
