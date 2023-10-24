@@ -570,5 +570,24 @@ input {
 }
 
 
+.container-detail img {
+  width: 10rem;
+  height: auto !important;
+}
+.container-detail .zoomWindow {
+  z-index: 999;
+  overflow: hidden;
+  margin-left: 0px;
+  margin-top: 0px;
+  background-position: -1078.19px -82.0531px;
+  float: left;
+  display: block;
+  cursor: url() 30 30, url() 30 30, zoom-in;
+  background-repeat: no-repeat;
+  position: absolute;
+  background-image: url();
+  top: 2rem;
+  left: 2rem;
+}
 
 /*# sourceMappingURL=styles.css.map */
