@@ -9,35 +9,53 @@
 body{
     background: rgb(162, 224, 255);
 }
+
+header {
+
+     .cabecera {
+        text-align: center;
+     }
+    
+    p {
+        text-align: center;
+        color: white;
+        margin: 5%;
+    }
+}
+
 section {
-    width: 80%;
-    height: 55em;
-    margin: 0 auto;
+    margin: 0 10%;
     background-color: #EFEFEF;
-    border-radius: 50px;
+    border-radius: 5%;
     display: flex;
-    align-items: center;
-    justify-content: center;
-
-    > div {
-        width: 85%;
-        height: 85%;
-        margin: 10%;
-        background-color: aqua;
-
-        >div {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 1rem;
+    gap: 1rem;
+    
+    article {
+        width: 30%;
+        
+        > div {
             width: 100%;
-            height: 100%;
-            display: grid;
-            grid-template-columns: 30% 30% 30%;
-            grid-template-rows: 47.5% 47.5%;
-            gap: 5%;
-            background-color: bisque;
-            >div {
+            height: auto;
+            background-color: white;
+            border-radius: 5%;
+
+            > img {
                 width: 100%;
                 height: 100%;
-                background-color: black;
+                object-fit: cover;
+                border-radius: 5%;
+
             }
         }
     }
+}
+
+.numbers {
+    display: flex;
+    justify-content: center;
+    color: white;
+    background-color: transparent;
 }
