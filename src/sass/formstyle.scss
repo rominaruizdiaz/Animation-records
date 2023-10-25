@@ -17,7 +17,8 @@ button {
 }
 
 input {
-    width: 25vw;
+    width: 18rem;
+    height: 1.5rem;
     background-color: #EBFFD3;
     border-radius: 10px;
     border: 1.4px solid black;
@@ -36,6 +37,21 @@ input {
 }
 
 .suscribir {
+    height: 1.5rem;
     color: #E5FF48;
 }
+
+
+@media only screen and (min-width: 781px) and (max-width: 910px) {
+    .exclusivo {
+        font-size: 1.1rem;
+    }
+}
+
+@media only screen and (min-width: 500px) and (max-width:780px) {
+    .exclusivo {
+        font-size: 1rem;
+    }
+}
+
 

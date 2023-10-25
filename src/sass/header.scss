@@ -9,18 +9,19 @@
 
 header {
   background-color: #155f87;
-  height: 17vh;
+  height: 7rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
 
-  >img {
-    margin-left: 50px;
+  .header-logo {
+    >img {
+      margin-left: 1rem;
+    }
   }
-  
   >nav {
     display: flex;
-    height: 80%;
+    height: 60%;
     align-items: end;
     margin-right: 50px;
   
@@ -63,11 +64,11 @@ header {
       }
     }
     button {
-      height: 50px;
-      width: 200px;
+      height: 2rem;
+      width: 8rem;
       border-radius: 10px;
       border: none;
-      font-size: 1.3em;
+      font-size: 1.3rem;
     }
   }
 }
@@ -87,17 +88,83 @@ header {
   filter: brightness(0.9);
 }
 #button-suscribe:hover {
-  width: 200px;
+  width: 9.5rem;
   filter: brightness(1.1);
 }
 #button-star-figure {
   float: left;
-  width: 40px;
+  width: 2rem;
   margin-left: 5px;
 }
 #button-suscribe-side {
-  font-size: 25px;
-  margin-left: 20px;
+  font-size: 1.3rem;
+  margin-left: 1rem;
   overflow: hidden;
   color: #ffef15;
+}
+
+.img-shop {
+  height: 2.6rem;
+  width: 2.4rem;
+  margin-bottom: -0.3rem;
+}
+
+@media (max-width: 900px) {
+  .header-logo {
+    img {
+      width: 12rem;
+      height: 4rem;
+    }
+  }
+  header{
+    nav {
+      button {
+      height: 1.8rem;
+      width: 5.8rem;
+      border-radius: 10px;
+      border: none;
+      font-size: 1rem;
+      }
+    }
+  }
+
+  #button-suscribe {
+    transition: ease-in-out all 0.4s;
+    width: 2.5rem;
+    display: flex;
+    align-items: center;
+    background-color: #47d47f;
+    filter: brightness(0.9);
+  }
+  #button-suscribe:hover {
+    width: 7.5rem;
+    filter: brightness(1.1);
+  }
+  #button-star-figure {
+    float: left;
+    width: 1.5rem;
+    margin-left: 5px;
+  }
+  #button-suscribe-side {
+    font-size: 1rem;
+    margin-left: 1rem;
+    overflow: hidden;
+    color: #ffef15;
+  }
+}
+
+@media (max-width: 700px) {
+  header {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .img-shop {
+  height: 2.2rem;
+  width: 1.8rem;
+  }
+
+  nav {
+    margin-bottom: 0.5rem;
+  }
 }
