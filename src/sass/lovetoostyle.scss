@@ -8,7 +8,6 @@ h5, p {
   margin-top: 5%;
 }
 
-
 .lovetoo-cards {
   background-color: rgb(247, 239, 239);
   display: flex;
@@ -19,10 +18,39 @@ h5, p {
   margin-left: 7.5%;
   margin-bottom: 3%;
   position: relative;
+  border-radius: 10px;
 }
 
 img {
   width: 18vw;
+  border-radius: 15px;
+}
+
+.image-container {
+  position: relative;
+  overflow: hidden;
+  width: 18vw;
+  height: auto;
+  transition: transform 0.3s; 
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+}
+
+.image-container:hover {
+  transform: scale(1.1);
+}
+
+
+.lovetoo-card-detail img {
+  width: 18vw;
+  transition: opacity 0.3s;
+}
+
+.lovetoo-card-detail img:hover {
+  opacity: 0.7; 
 }
 
 
@@ -30,33 +58,14 @@ img {
 display: flex;
 flex-direction: column;
 align-items: center;
+border-radius: 10px;
+
 }
 
 
 .btn-left, .btn-right {
-    font-size: 24px;
-    color: #000; 
-    cursor: pointer;
-    background-color: #ccc;
-    border: 1px solid #000;
-    padding: 5px 10px;
-    border-radius: 50%; 
-    margin: 2px;
-    position: absolute;
-    top: 90%;
-}
-
-.btn-left {
-  left: 0;
-  transform: translateY(-50%); 
-}
-
-.btn-right {
-  right: 0;
-  transform: translateY(-50%); 
-}
-
-.btn-left:hover, .btn-right:hover {
-    background-color: #333;
-    color: #fff;
+  
+    color: #f8f5f5; 
+   
+    top: 85%;
 }
