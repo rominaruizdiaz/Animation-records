@@ -21,7 +21,7 @@ header {
   justify-content: space-between;
 }
 header .header-logo > img {
-  margin-left: 1rem;
+  margin-left: 3rem;
 }
 header > nav {
   display: flex;
@@ -32,7 +32,7 @@ header > nav {
 header > nav > ul {
   display: flex;
   align-items: end;
-  gap: 20px;
+  gap: 10px;
 }
 header > nav > ul > li > ul {
   width: 200px;
@@ -162,24 +162,41 @@ header > nav button {
     margin-bottom: 0.5rem;
   }
 }
+@media only screen and (min-width: 360px) and (max-width: 569px) {
+  #button-suscribe {
+    width: 2.2rem;
+  }
+  #button-suscribe:hover {
+    width: 7.3rem;
+    filter: brightness(1.1);
+  }
+  #button-star-figure {
+    width: 1.3rem;
+    margin-left: 5px;
+  }
+  #button-suscribe-side {
+    font-size: 0.9rem;
+    margin-left: 0.8rem;
+  }
+  nav {
+    margin-right: 0.01rem;
+    margin-left: 1.5rem;
+  }
+}
 .container-carousel {
   width: 90%;
   height: 20.5rem;
   margin: 0 auto;
   overflow: hidden;
-  box-shadow: 0 0.5rem 2rem 0 rgba(0, 0, 0, 0.66);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.66);
   border-radius: 2rem;
-  margin-top: 6rem;
+  margin-top: 5vh;
   position: relative;
   display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .carruseles {
   display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .slider-section {
@@ -338,7 +355,7 @@ header > nav button {
 }
 
 .container-cards-categories {
-  padding: 4rem;
+  padding: 4.3rem;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
   gap: 3rem;
@@ -355,7 +372,6 @@ header > nav button {
   height: min-content;
   position: relative;
   display: inline-block;
-  /* box-shadow: 0 0 0 2px #00C1DD inset; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -406,7 +422,7 @@ header > nav button {
   text-align: center;
   margin-left: 5%;
   margin-right: 5%;
-  margin-bottom: 2%;
+  margin-bottom: 5%;
   border-radius: 10px;
   padding: 5px;
   line-height: 55px;
@@ -416,7 +432,7 @@ button {
   background-color: #5CCD5A;
   border-radius: 10px;
   border: 1.4px solid black;
-  width: 13vw;
+  width: 10rem;
 }
 
 input {
@@ -449,9 +465,23 @@ input {
     font-size: 1.1rem;
   }
 }
-@media only screen and (min-width: 500px) and (max-width: 780px) {
+@media only screen and (min-width: 570px) and (max-width: 780px) {
   .exclusivo {
     font-size: 1rem;
+  }
+  .form-container {
+    line-height: 30px;
+  }
+}
+@media only screen and (min-width: 360px) and (max-width: 569px) {
+  .exclusivo {
+    font-size: 0.8rem;
+  }
+  .form-container {
+    line-height: 30px;
+  }
+  nav {
+    height: auto;
   }
 }
 #container {
@@ -490,6 +520,12 @@ input {
   color: aliceblue;
 }
 
+@media only screen and (min-width: 360px) and (max-width: 569px) {
+  #container {
+    display: flex;
+    flex-direction: column;
+  }
+}
 
 
 /*# sourceMappingURL=styles.css.map */

@@ -3,7 +3,7 @@
     text-align: center;
     margin-left: 5%;
     margin-right: 5%;
-    margin-bottom: 2%;
+    margin-bottom: 5%;
     border-radius: 10px;
     padding: 5px;
     line-height: 55px;
@@ -13,7 +13,7 @@ button {
     background-color: #5CCD5A;
     border-radius: 10px;
     border: 1.4px solid black;
-    width: 13vw;
+    width: 10rem;
 }
 
 input {
@@ -48,9 +48,27 @@ input {
     }
 }
 
-@media only screen and (min-width: 500px) and (max-width:780px) {
+@media only screen and (min-width: 570px) and (max-width:780px) {
     .exclusivo {
         font-size: 1rem;
+    }
+
+    .form-container {
+        line-height: 30px;
+    }
+}
+
+@media only screen and (min-width: 360px) and (max-width:569px) {
+    .exclusivo {
+        font-size: 0.8rem;
+    }
+
+    .form-container {
+        line-height: 30px;
+    }
+
+    nav {
+        height: auto;
     }
 }
 

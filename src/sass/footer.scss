@@ -33,5 +33,14 @@
   color: aliceblue;
 }
 
+@media only screen and (min-width: 360px) and (max-width:569px) {
+  #container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+
+
 /*# sourceMappingURL=styles.css.map */
 

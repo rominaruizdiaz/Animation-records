@@ -9,7 +9,7 @@
 }
 
 .container-cards-categories {
-    padding: 4rem;
+    padding: 4.3rem;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
     gap: 3rem;
@@ -27,7 +27,6 @@
     height:min-content;
     position: relative;
     display: inline-block;
-    /* box-shadow: 0 0 0 2px #00C1DD inset; */
     display: flex;
     flex-direction: column;
     align-items: center;
