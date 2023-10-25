@@ -592,170 +592,62 @@ input {
 
 h4 {
   text-align: center;
-  color: #EBFFD3;
+  color: rgb(247, 239, 239);
+  padding: 3%;
+}
+
+h5, p {
   margin-top: 5%;
 }
 
-.container-lovetoo {
-  width: 70.5rem;
-  height: 20.5rem;
-  margin: 0 auto;
-  overflow: hidden;
-  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.66);
-  border-radius: 2rem;
-  margin-top: 5vh;
-  position: relative;
-  display: flex;
-}
-
 .lovetoo-cards {
+  background-color: rgb(247, 239, 239);
   display: flex;
-}
-
-.lovetoo-cards-section {
-  width: 100%;
-  height: 100%;
+  flex-direction: row;
+  width: 80vw;
+  padding: 3%;
+  gap: 3%;
+  margin-left: 7.5%;
+  margin-bottom: 3%;
+  position: relative;
 }
 
 img {
-  height: 100%;
-  object-fit: cover;
-  border-radius: 2rem;
+  width: 18vw;
 }
 
-#btn-left, #btn-right {
+.lovetoo-card-detail {
   display: flex;
-  position: absolute;
-  margin-top: -12%;
-  font-size: 2rem;
-  background-color: transparent;
-  border-radius: 50%;
-  cursor: pointer;
-  color: rgb(240, 238, 238);
-  transform: translate(-50%, -50%);
-  transition: 1.3s ease;
-  user-select: none;
-}
-#btn-left:hover, #btn-right:hover {
-  background-color: aqua;
-  color: azure;
-}
-
-#btn-left {
-  left: 2rem;
-}
-
-#btn-right {
-  right: 1rem;
-}
-
-.carousel-indicators {
-  display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  list-style: none;
-  padding: 0;
 }
-.carousel-indicators > span {
-  display: inline-block;
-  width: 1rem;
-  height: 1rem;
+
+.btn-left, .btn-right {
+  font-size: 24px;
+  color: #000;
+  cursor: pointer;
   background-color: #ccc;
+  border: 1px solid #000;
+  padding: 5px 10px;
   border-radius: 50%;
-  margin: 1rem;
+  margin: 2px;
+  position: absolute;
+  top: 90%;
 }
-.carousel-indicators > span.w3-white {
-  background-color: #7CEA72;
-  transform: scale(1.1);
-  position: relative;
-  width: 2rem;
-  border: none;
-  border-radius: 1.5rem;
-  margin: 2rem !important;
+
+.btn-left {
+  left: 0;
+  transform: translateY(-50%);
 }
-.carousel-indicators > span:hover {
-  background-color: #7CEA72;
-  transform: scale(1.2);
+
+.btn-right {
+  right: 0;
+  transform: translateY(-50%);
 }
-@media (max-width: 1366px) {
-  .carousel-indicators > span .container-carousel {
-    width: 100%;
-    height: auto;
-  }
-  .carousel-indicators > span .carruseles {
-    width: 100%;
-    height: auto;
-  }
-  .carousel-indicators > span .slider-section {
-    width: 100%;
-    height: auto;
-  }
-  .carousel-indicators > span .btn-left,
-  .carousel-indicators > span .btn-right {
-    font-size: 3rem;
-  }
-  .carousel-indicators > span .carousel-indicators {
-    margin-top: 0.5rem;
-  }
-  .carousel-indicators > span span {
-    width: 2.5rem;
-    height: 2.5rem;
-    margin-right: 2rem;
-  }
-}
-@media (max-width: 950px) {
-  .carousel-indicators > span .container-carousel {
-    width: 100%;
-    height: auto;
-  }
-  .carousel-indicators > span .carruseles {
-    width: 100%;
-    height: auto;
-  }
-  .carousel-indicators > span .slider-section {
-    width: 100%;
-    height: auto;
-  }
-  .carousel-indicators > span .btn-left, .carousel-indicators > span .btn-right {
-    font-size: 2rem !important;
-    margin-left: 2rem !important;
-    margin-right: 2rem !important;
-    margin-top: 8rem;
-  }
-  .carousel-indicators > span .carousel-indicators {
-    margin-top: 0.5rem;
-  }
-  .carousel-indicators > span span {
-    width: 2rem;
-    height: 2rem;
-    margin-right: 2rem;
-  }
-}
-@media (max-width: 575px) {
-  .carousel-indicators > span .container-carousel {
-    width: 100%;
-    height: auto;
-  }
-  .carousel-indicators > span .carruseles {
-    width: 100%;
-    height: auto;
-  }
-  .carousel-indicators > span .slider-section {
-    width: 100%;
-    height: auto;
-  }
-  .carousel-indicators > span .btn-left,
-  .carousel-indicators > span .btn-right {
-    font-size: 1.5rem;
-  }
-  .carousel-indicators > span .carousel-indicators {
-    margin-top: 0.5rem;
-  }
-  .carousel-indicators > span span {
-    width: 1.5rem;
-    height: 1.5rem;
-    margin-right: 2rem;
-  }
+
+.btn-left:hover, .btn-right:hover {
+  background-color: #333;
+  color: #fff;
 }
 
 /*# sourceMappingURL=styles.css.map */
