@@ -1,4 +1,5 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css");
 body {
   background: rgb(0, 156, 233);
   background: linear-gradient(180deg, rgb(0, 156, 233) 0%, rgb(2, 231, 67) 100%);
@@ -186,10 +187,17 @@ header > nav button {
 .container-carousel {
   position: relative;
   display: flex;
-  border-radius: 20%;
 }
-.container-carousel img {
-  width: 90%;
+
+.carruseles {
+  display: flex;
+}
+
+.slider-section {
+  width: 100%;
+  height: 100%;
+}
+.slider-section img {
   height: 100%;
   border-radius: 2rem;
   margin-left: 5%;
