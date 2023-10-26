@@ -25,7 +25,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "sass-w": "sass --watch ./src/sass/styles.scss ./public/css/styles.css",
-    "sass": "sass --watch ./src/sass/section-page.scss ./public/css/section-page.css"
+    "sass": "sass --watch ./src/sass/section-page.scss ./public/css/section-page.css",
+    "sass-d": "sass --watch ./src/sass/product-detail.scss ./public/css/product-detail.css"
   },
   "author": "",
   "license": "ISC",

@@ -187,10 +187,17 @@ header > nav button {
 .container-carousel {
   position: relative;
   display: flex;
-  border-radius: 20%;
 }
-.container-carousel img {
-  width: 90%;
+
+.carruseles {
+  display: flex;
+}
+
+.slider-section {
+  width: 100%;
+  height: 100%;
+}
+.slider-section img {
   height: 100%;
   border-radius: 2rem;
   margin-left: 5%;
