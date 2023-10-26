@@ -12,6 +12,7 @@ h5, p {
   background-color: rgb(247, 239, 239);
   display: flex;
   flex-direction: row;
+  align-items: center;
   width: 80vw;
   padding: 3%;
   gap: 3%;
@@ -19,6 +20,7 @@ h5, p {
   margin-bottom: 3%;
   position: relative;
   border-radius: 10px;
+  position: relative;
 }
 
 img {
@@ -29,6 +31,8 @@ img {
 .image-container {
   position: relative;
   overflow: hidden;
+  width: 18vw;
+  height: auto;
   transition: transform 0.3s; 
 }
 
@@ -61,7 +65,27 @@ border-radius: 10px;
 }
 
 
-.btn-left, .btn-right {
-    color: #f8f5f5; 
-    top: 70%;
+.btn-left,
+.btn-right {
+  color: #f8f5f5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 2px solid #dbd8d8;
+  transition: background-color 0.3s;
+  padding: 0.3%;
+  position: absolute;
+  top: 71%; 
+}
+
+.btn-left {
+  margin-left: 3%;
+}
+
+.btn-right {
+  right: 3%;
 }
