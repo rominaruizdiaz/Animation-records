@@ -1,28 +1,19 @@
 .container-carousel {
   position: relative;
   display: flex;
-}
-
-.carruseles {
-  display: flex;
-  
-}
-.slider-section {
-  width: 100%;
-  height: 100%;
-
-  img {
+  border-radius: 20%;
+  img{
+    width: 90%;
     height: 100%;
     border-radius: 2rem;
     margin-left: 5%;
     margin-top: 5%;
-    
   }
 }
 #btn-left, #btn-right {
   display: flex;
   position: absolute;
-  margin-top: -9%;
+  margin-top: -5%;
   font-size: 2rem;
   background-color: transparent;
   border-radius: 50%;
@@ -37,10 +28,10 @@
   }
 }
 #btn-left {
-  left: 2rem;
+  left: -0.5rem;
 }
 #btn-right {
-  right: 1rem;
+  right: -0.5rem;
 }
 .carousel-indicators {
   margin-top:5%;
@@ -68,9 +59,6 @@
     &:hover {
       background-color: #7CEA72;
       transform: scale(1.2);
-     
     }
-    
   }
-}
-
+} 

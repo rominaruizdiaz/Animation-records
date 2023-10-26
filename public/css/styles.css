@@ -187,17 +187,10 @@ header > nav button {
 .container-carousel {
   position: relative;
   display: flex;
+  border-radius: 20%;
 }
-
-.carruseles {
-  display: flex;
-}
-
-.slider-section {
-  width: 100%;
-  height: 100%;
-}
-.slider-section img {
+.container-carousel img {
+  width: 90%;
   height: 100%;
   border-radius: 2rem;
   margin-left: 5%;
@@ -207,7 +200,7 @@ header > nav button {
 #btn-left, #btn-right {
   display: flex;
   position: absolute;
-  margin-top: -9%;
+  margin-top: -5%;
   font-size: 2rem;
   background-color: transparent;
   border-radius: 50%;
@@ -223,11 +216,11 @@ header > nav button {
 }
 
 #btn-left {
-  left: 2rem;
+  left: -0.5rem;
 }
 
 #btn-right {
-  right: 1rem;
+  right: -0.5rem;
 }
 
 .carousel-indicators {
@@ -528,17 +521,15 @@ input {
   color: red;
 }
 
-.lovetootexth4 {
+#lovetoo .lovetootexth4 {
   text-align: center;
   color: rgb(247, 239, 239);
   padding: 3%;
 }
-
-.lovetootexth5, .lovetootextp {
+#lovetoo .lovetootexth5, #lovetoo .lovetootextp {
   margin-top: 5%;
 }
-
-.lovetoo-cards {
+#lovetoo .lovetoo-cards {
   background-color: rgb(247, 239, 239);
   display: flex;
   flex-direction: row;
@@ -552,48 +543,40 @@ input {
   border-radius: 10px;
   position: relative;
 }
-
-img {
+#lovetoo img {
   width: 18vw;
   border-radius: 15px;
 }
-
-.image-container {
+#lovetoo .image-container {
   position: relative;
   overflow: hidden;
   width: 18vw;
   height: auto;
   transition: transform 0.3s;
 }
-
-.image-container img {
+#lovetoo .image-container img {
   width: 100%;
   height: auto;
 }
-
-.image-container:hover {
+#lovetoo .image-container:hover {
   transform: scale(1.1);
 }
-
-.lovetoo-card-detail img {
+#lovetoo .lovetoo-card-detail img {
   width: 18vw;
   transition: opacity 0.3s;
 }
-
-.lovetoo-card-detail img:hover {
+#lovetoo .lovetoo-card-detail img:hover {
   opacity: 0.7;
 }
-
-.lovetoo-card-detail {
+#lovetoo .lovetoo-card-detail {
   display: flex;
   flex-direction: column;
   align-items: center;
   border-radius: 10px;
 }
-
-.btn-left,
-.btn-right {
-  color: #f8f5f5;
+#lovetoo .btn-left,
+#lovetoo .btn-right {
+  color: #F8F5F5;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -601,18 +584,16 @@ img {
   height: 30px;
   border-radius: 50%;
   background-color: transparent;
-  border: 2px solid #dbd8d8;
+  border: 2px solid #DBD8D8;
   transition: background-color 0.3s;
   padding: 0.3%;
   position: absolute;
-  top: 71%;
+  bottom: -55%;
 }
-
-.btn-left {
-  margin-left: 3%;
+#lovetoo .btn-left {
+  margin-left: 5%;
 }
-
-.btn-right {
+#lovetoo .btn-right {
   right: 3%;
 }
 
