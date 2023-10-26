@@ -29,8 +29,6 @@ img {
 .image-container {
   position: relative;
   overflow: hidden;
-  width: 18vw;
-  height: auto;
   transition: transform 0.3s; 
 }
 
@@ -64,8 +62,6 @@ border-radius: 10px;
 
 
 .btn-left, .btn-right {
-  
     color: #f8f5f5; 
-   
-    top: 85%;
+    top: 70%;
 }
