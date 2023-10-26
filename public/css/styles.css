@@ -184,40 +184,27 @@ header > nav button {
   }
 }
 .container-carousel {
-  width: 90%;
-  height: 20.5rem;
-  margin: 0 auto;
-  overflow: hidden;
-  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.66);
-  border-radius: 2rem;
-  margin-top: 5vh;
   position: relative;
   display: flex;
+  border-radius: 20%;
 }
-
-.carruseles {
-  display: flex;
-}
-
-.slider-section {
-  width: 100%;
+.container-carousel img {
+  width: 90%;
   height: 100%;
-}
-.slider-section img {
-  height: 100%;
-  object-fit: cover;
   border-radius: 2rem;
+  margin-left: 5%;
+  margin-top: 5%;
 }
 
 #btn-left, #btn-right {
   display: flex;
   position: absolute;
-  margin-top: -12%;
+  margin-top: -9%;
   font-size: 2rem;
   background-color: transparent;
   border-radius: 50%;
   cursor: pointer;
-  color: rgb(126, 23, 23);
+  color: rgb(69, 25, 163);
   transform: translate(-50%, -50%);
   transition: 1.3s ease;
   user-select: none;
@@ -236,6 +223,7 @@ header > nav button {
 }
 
 .carousel-indicators {
+  margin-top: 5%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -263,86 +251,6 @@ header > nav button {
   background-color: #7CEA72;
   transform: scale(1.2);
 }
-@media (max-width: 1366px) {
-  .carousel-indicators > span .container-carousel {
-    width: 100%;
-    height: auto;
-  }
-  .carousel-indicators > span .carruseles {
-    width: 100%;
-    height: auto;
-  }
-  .carousel-indicators > span .slider-section {
-    width: 100%;
-    height: auto;
-  }
-  .carousel-indicators > span .btn-left,
-  .carousel-indicators > span .btn-right {
-    font-size: 3rem;
-  }
-  .carousel-indicators > span .carousel-indicators {
-    margin-top: 0.5rem;
-  }
-  .carousel-indicators > span span {
-    width: 2.5rem;
-    height: 2.5rem;
-    margin-right: 2rem;
-  }
-}
-@media (max-width: 950px) {
-  .carousel-indicators > span .container-carousel {
-    width: 100%;
-    height: auto;
-  }
-  .carousel-indicators > span .carruseles {
-    width: 100%;
-    height: auto;
-  }
-  .carousel-indicators > span .slider-section {
-    width: 100%;
-    height: auto;
-  }
-  .carousel-indicators > span .btn-left, .carousel-indicators > span .btn-right {
-    font-size: 2rem !important;
-    margin-left: 2rem !important;
-    margin-right: 2rem !important;
-    margin-top: 8rem;
-  }
-  .carousel-indicators > span .carousel-indicators {
-    margin-top: 0.5rem;
-  }
-  .carousel-indicators > span span {
-    width: 2rem;
-    height: 2rem;
-    margin-right: 2rem;
-  }
-}
-@media (max-width: 575px) {
-  .carousel-indicators > span .container-carousel {
-    width: 100%;
-    height: auto;
-  }
-  .carousel-indicators > span .carruseles {
-    width: 100%;
-    height: auto;
-  }
-  .carousel-indicators > span .slider-section {
-    width: 100%;
-    height: auto;
-  }
-  .carousel-indicators > span .btn-left,
-  .carousel-indicators > span .btn-right {
-    font-size: 1.5rem;
-  }
-  .carousel-indicators > span .carousel-indicators {
-    margin-top: 0.5rem;
-  }
-  .carousel-indicators > span span {
-    width: 1.5rem;
-    height: 1.5rem;
-    margin-right: 2rem;
-  }
-}
 
 * {
   margin: 0;
@@ -357,7 +265,7 @@ header > nav button {
 .container-cards-categories {
   padding: 4.3rem;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
   gap: 3rem;
 }
 
@@ -385,7 +293,7 @@ header > nav button {
   opacity: 0;
   transform: scale(0);
   transition: all 0.8s ease-in-out 0s;
-  font-size: 3.2rem;
+  font-size: 2rem;
 }
 
 .category:hover h2 {
