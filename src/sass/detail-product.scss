@@ -1,0 +1,72 @@
+.container-detail{
+    background-color:white;
+    width: 70%;
+    height: 70%;
+    display: flex;
+    margin-left: 12%;
+    margin-top: 2%;
+    border-radius: 1rem ;
+    padding: 3rem;
+    margin-bottom: 2%;
+  img{
+    width:50%;
+    height: auto !important;
+    margin-left: 3%;
+    float: left;
+    margin-right: 2%;
+     }
+  h3 ,p{
+    margin-top: 5%;
+  }
+   .description{
+    text-align: justify;
+    margin-top: 3%;
+    margin-bottom: 3%;
+  }
+  .cant{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    border-bottom: 1px solid #c2c6cb;
+    border-top: 1px solid #c2c6cb;
+  }
+}
+.miniature  {
+    justify-content: space-around;
+    align-content: end;
+    width: 80%;
+    height: 20%;
+    flex-wrap: wrap;
+    background-color: aqua;
+    margin-top: 15%;
+      .detail{
+        width: 15%;
+        height: 15%;
+     &:hover { 
+      border-color: black !important;
+      border: 0.25em solid !important; 
+      border-radius: 5%; 
+    }
+      
+      
+  }
+
+ 
+} #like-button{
+  width: 8rem;
+  font-size: 2rem !important;
+  border:none !important;
+  background-color: transparent!important;
+  margin-left: 3%;
+  margin-top: 5%;
+}  
+#cart-button{
+  width: 8rem;
+  font-size: 2rem !important;
+  border:none !important;
+  background-color: transparent!important;
+  margin-top: 5%;
+}  
+#like-button.is-active i {
+  color: red;
+}

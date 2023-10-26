@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <section id="lovetoo">
+
+        <h4>También te puede gustar</h4>
+
+        <div class="lovetoo-cards">
+            <div class="lovetoo-card-detail">
+                <div class="image-container">
+                    <img src="../assets/imagenes/1woodyts37e.jpg" alt="">
+                </div>
+                <h5>Woody</h5>
+                <p>37€</p>
+            </div>
+
+            <div class="lovetoo-card-detail">
+                <div class="image-container">
+                    <img src="../assets/imagenes/2chipchop32e.jpg" alt="">
+                </div>
+                <h5>Chip y Chop</h5>
+                <p>32€</p>
+            </div>
+
+            <div class="lovetoo-card-detail">
+                <div class="image-container">
+                    <img src="../assets/imagenes/3osolotso20e.jpg" alt="">
+                </div>
+                <h5>Oso Lotso</h5>
+                <p>20€</p>
+
+            </div>
+            <div class="lovetoo-card-detail">
+                <div class="image-container">
+                    <img src="../assets/imagenes/4Ursulafunko17e.jpg" alt="">
+                </div>
+                <h5>Funko Ursula</h5>
+                <p>17€</p>
+            </div>
+
+            <div class="lovetoo-card-detail">
+                <div class="image-container">
+                    <img src="../assets/imagenes/5disfrazrapunzel50e.jpg" alt="">
+                </div>
+                <h5>Disfraz Punzel</h5>
+                <p>50€ </p>
+            </div>
+
+            <div class="lovetoo-card-detail">
+                <div class="image-container">
+                    <img src="../assets/imagenes/6sebastian.27.90€.jpg" alt="">
+                </div>
+                <h5>Sebastian</h5>
+                <p>34€</p>
+            </div>
+
+            <div class="lovetoo-card-detail">
+                <div class="image-container">
+                    <img src="../assets/imagenes/7galerna.18e.jpg" alt="">
+                </div>
+                <h5>Galerna</h5>
+                <p>18€</p>
+            </div>
+
+            <div class="lovetoo-card-detail">
+                <div class="image-container">
+                    <img src="../assets/imagenes/8tazajack14e.jpg" alt="">
+                </div>
+                <h5>Taza Jack</h5>
+                <p>14€</p>
+            </div>
+
+            <div>
+                <div class="btn-left" id="btn-left" onclick="plusDivs(-1)">
+                    &#60
+                </div>
+
+                <div class="btn-right" id="btn-right" onclick="plusDivs(1)">
+                    &#62  
+                </div>
+            </div>
+
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script>
+        let slideIndex = 0;
+        showSlides(slideIndex);
+
+        function plusDivs(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function showSlides(n) {
+            let slides = document.querySelectorAll(".lovetoo-card-detail");
+            let slidesPerPage = 4;
+            let startIndex = n * slidesPerPage;
+
+            if (startIndex >= slides.length) {
+                slideIndex = 0;
+                startIndex = 0;
+            }
+            if (startIndex < 0) {
+                slideIndex = Math.floor((slides.length - 1) / slidesPerPage);
+                startIndex = slideIndex * slidesPerPage;
+            }
+
+
+            $(slides).hide();
+
+
+            for (let i = startIndex; i < startIndex + slidesPerPage && i < slides.length; i++) {
+                $(slides[i]).show();
+            }
+        }
+    </script>
+
+</body>
+
+</html>

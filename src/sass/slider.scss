@@ -1,12 +1,17 @@
 .container-carousel {
   position: relative;
   display: flex;
-  border-radius: 20%;
-  img{
-    width: 90%;
-  border-radius: 20%;
-  img{
-    width: 90%;
+}
+
+.carruseles {
+  display: flex;
+  
+}
+.slider-section {
+  width: 100%;
+  height: 100%;
+
+  img {
     height: 100%;
     border-radius: 2rem;
     margin-left: 5%;
@@ -18,12 +23,10 @@
   display: flex;
   position: absolute;
   margin-top: -9%;
-  margin-top: -9%;
   font-size: 2rem;
   background-color: transparent;
   border-radius: 50%;
   cursor: pointer;
-  color: rgb(69, 25, 163);
   color: rgb(69, 25, 163);
   transform: translate(-50%, -50%);
   transition: 1.3s ease;
@@ -40,7 +43,6 @@
   right: 1rem;
 }
 .carousel-indicators {
-  margin-top:5%;
   margin-top:5%;
   display: flex;
   justify-content: center;
@@ -71,4 +73,4 @@
     
   }
 }
-}
+
