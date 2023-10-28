@@ -38,14 +38,12 @@
     </nav>
   </header>
   <main>
-
-    <main>
    <section class="container-detail">
-              <div>
-                <div>
+     <div>
+        <div>
                 <img class="detail" id="mainImage" onclick="currentDiv(1)" src="../assets/imagenes/taza1.webp" alt="" />
-              </div>
-              <div>
+        </div>
+        <div>
                 <h3>Taza con forma de Mei Lee panda rojo, Red, Disney Store</h3>
                 <p>20.00€</p>
                 <p class="description">
@@ -53,29 +51,26 @@
               Mei Lee con la forma de panda rojo, la encantadora taza está
               rematada con detalles esculpidos.
                 </p>
-                <div class="cant">
+           <div class="cant">
                   <div>
                     <p>Cantidad</p>
                   </div>
-                  <div><i class="fa-solid fa-minus"></i></div>
-                  <div><p>0</p></div>
-                  <div><i class="fa-solid fa-plus"></i></div>
+                  <div class="calculator">
+                   <button class="operation decrement">-</button>
+                    <div class="display"><p>0</p></div>
+                    <button class="operation increment">+</button>
             </div>
-          </div>
-      
-                    <div class="miniature">
+           </div>
+        </div>
+        <div class="miniature">
                       <img class="detail" onclick="currentDiv(1)" src="../assets/imagenes/taza1.webp" alt="" />
                       <img class="detail" onclick="currentDiv(2)" src="../assets/imagenes/taza2.webp" alt="" />
                       <img class="detail" onclick="currentDiv(3)" src="../assets/imagenes/taza3.webp" alt="" />
                       <img class="detail" onclick="currentDiv(4)" src="../assets/imagenes/taza4.webp" alt="" />
-                    </div>
-                </div>
-            
-              </section>
-
-  
-    
-      <section id="lovetoo">
+        </div>
+      </div>
+  </section>
+  <section id="lovetoo">
         <h4 class="lovetootexth4">También te puede gustar</h4>
         <div class="lovetoo-cards">
             <div class="lovetoo-card-detail">
@@ -152,5 +147,6 @@
     <script src="../js/miniature.js"></script>
     <script src="../js/cartShopping.js"></script>
   <script src="../js/likeButton.js"></script>
+  <script src="../js/counter.js"></script>
   </body>
 </html>
