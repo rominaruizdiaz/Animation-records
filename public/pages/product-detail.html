@@ -1,24 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Home Page</title>
   <link rel="stylesheet" href="../css/product-detail.css">
 </head>
-
 <body>
-  <header><div class="header-logo">
-    <img src="/public/assets/imagenes/logo.png" alt="disney shop logo"></div>
+  <header>
+    <div class="header-logo">
+      <img src="/public/assets/imagenes/logo.png" alt="disney shop logo">
+    </div>
     <nav>
       <ul>
         <li>
-          <button id="home">
-            <a href="home-page.html">
-              Inicio
-            </a>
-          </button>
+          <a href="home-page.html">
+            <button id="home">Inicio</button>
+          </a>
         </li>
         <li>
           <button id="categories" class="categories-drop-down-button">Categories</button>
@@ -33,49 +31,58 @@
         </li>
         <li>
           <img src="/public/assets/imagenes/shop.png" alt="shopping cart of disney">
-          
-         </li>
-         <li><div class="displayNav"><p>0</p></div></li>
+        </li>
+        <li>
+          <div class="displayNav">
+            <p id="contadorCarrito">0</p>
+          </div>
+        </li>
       </ul>
-      
+      <button id="cart-btn-nav" class="cart-button">
+        <i class="fas fa-shopping-cart"></i>
+        <span id="contadorCarritoNav">0</span>
+      </button>
+      <div id="carrito" class="carrito-dropdown">
+        <ul id="carrito-lista"></ul>
+        <button id="vaciar-carrito">Vaciar Carrito</button>
+      </div>
     </nav>
   </header>
   <main>
-   <section class="container-detail">
-     <div>
+    <section class="container-detail">
+      <div>
         <div>
-                <img class="detail" id="mainImage" onclick="currentDiv(1)" src="../assets/imagenes/taza1.webp" alt="" />
+          <img class="detail" id="mainImage" onclick="currentDiv(1)" src="../assets/imagenes/taza1.webp" alt="">
         </div>
         <div>
-                <h3>Taza con forma de Mei Lee panda rojo, Red, Disney Store</h3>
-                <p>20.00€</p>
-                <p class="description">
-                  Disfruta de unas meriendas pandásticas con esta taza. Inspirada en
-              Mei Lee con la forma de panda rojo, la encantadora taza está
-              rematada con detalles esculpidos.
-                </p>
-           <div class="cant">
-                  <div>
-                    <p>Cantidad</p>
-                  </div>
-                  <div class="calculator">
-                   <button class="operation decrement">-</button>
-                    <div class="display"><p>0</p></div>
-                    <button class="operation increment">+</button>
+          <h3>Taza con forma de Mei Lee panda rojo, Red, Disney Store</h3>
+          <p>20.00€</p>
+          <p class="description">
+            Disfruta de unas meriendas pandásticas con esta taza. Inspirada en Mei Lee con la forma de panda rojo, la encantadora taza está rematada con detalles esculpidos.
+          </p>
+          <div class="cant">
+            <div>
+              <p>Cantidad</p>
             </div>
-          
-           </div>
+            <div class="calculator">
+              <button class="operation decrement">-</button>
+              <div class="display"><p id="display">0</p></div>
+              <button class="operation increment">+</button>
+            </div>
+          </div>
         </div>
         <button id="like-btn" class="like-button">
           <i class="fas fa-heart"></i>
-      </button>
-      
-         
+        </button>
+        <button id="cart-btn" class="cart-button">
+          <i class="fas fa-shopping-cart"></i>
+          <span id="contadorCarrito">0</span>
+        </button>
         <div class="miniature">
-                      <img class="detail" onclick="currentDiv(1)" src="../assets/imagenes/taza1.webp" alt="" />
-                      <img class="detail" onclick="currentDiv(2)" src="../assets/imagenes/taza2.webp" alt="" />
-                      <img class="detail" onclick="currentDiv(3)" src="../assets/imagenes/taza3.webp" alt="" />
-                      <img class="detail" onclick="currentDiv(4)" src="../assets/imagenes/taza4.webp" alt="" />
+          <img class="detail" onclick="currentDiv(1)" src="../assets/imagenes/taza1.webp" alt="">
+          <img class="detail" onclick="currentDiv(2)" src="../assets/imagenes/taza2.webp" alt="">
+          <img class="detail" onclick="currentDiv(3)" src="../assets/imagenes/taza3.webp" alt="" />
+          <img class="detail" onclick="currentDiv(4)" src="../assets/imagenes/taza4.webp" alt="" />
         </div>
       </div>
   </section>
@@ -110,9 +117,7 @@
                 <h5 class="lovetootexth5">Funko Ursula</h5>
                 <p class="lovetootextp">17€</p>
             </div>
-            
-                 
-        </div>
+            </div>
         <div id="button-section">
             <div class="btn-left" id="btn-left" onclick="plusDivs(-1)">
                 &#60
@@ -122,10 +127,8 @@
             </div>
         </div>
     </section>
-   
     </main>
-  
-    <footer id="container">
+     <footer id="container">
       <div>
         <div class="facebook">
           <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
@@ -154,8 +157,11 @@
     </footer>
     <script src="../js/slider-indicators.js"></script>
     <script src="../js/miniature.js"></script>
-    <script src="../js/cartShopping.js"></script>
+    
   <script src="../js/likeButton.js"></script>
-  <script src="../js/counter.js"></script>
+   <script src="../js/counter.js"></script>
   </body>
 </html>
+
+
+

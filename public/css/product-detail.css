@@ -67,8 +67,8 @@
   height: 20%;
   flex-wrap: wrap;
   background-color: white;
-  margin-top: 15%;
-  margin-bottom: 25%;
+  margin-top: 10%;
+  margin-bottom: 20%;
 }
 .miniature .detail {
   width: 15%;
@@ -423,6 +423,8 @@ header > nav button {
   height: 2rem;
 }
 .like-button i {
+  margin-top: 3rem;
+  margin-left: 10rem;
   font-size: 1.5rem;
   color: #12ff45;
 }

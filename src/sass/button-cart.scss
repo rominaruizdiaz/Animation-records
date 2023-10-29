@@ -1,0 +1,17 @@
+.cart-button {
+    border: none;
+    background-color: white;
+    color: #12ff45;
+    width: 2rem;
+    height: 2rem;
+  
+    i {
+      font-size: 1.5rem;
+      color: white;
+    }
+  
+    &:hover {
+      color: #8ff0ac;
+    }
+  }
+  
