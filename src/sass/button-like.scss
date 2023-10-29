@@ -1,0 +1,20 @@
+
+
+  
+  .like-button {
+    border: none;
+    background-color: white;
+    color: #12ff45;
+    width: 2rem;
+    height: 2rem;
+    
+    &:hover {
+      color: #8ff0ac;
+    }
+  
+    &.clicked {
+      color: red;
+    }
+  }
+    
+  

@@ -1,9 +1,9 @@
 .container-detail{
     background-color:white;
-    width: 70%;
-    height: 70%;
+    width: 80%;
+    height: 80%;
     display: flex;
-    margin-left: 12%;
+    margin-left: 7%;
     margin-top: 2%;
     border-radius: 1rem ;
     padding: 3rem;
@@ -31,7 +31,7 @@
     border-top: 1px solid #c2c6cb;
     font-size: 1rem;
     .calculator {
-      width: 100%;
+      width: 50%;
       margin: 0 auto;
       direction: row;
       display: flex;
@@ -41,9 +41,10 @@
         width: 100%;
         text-align: center;
         font-size: 1rem;
+        margin-top: 5%;
     
         }
-   
+                   
         button {
           margin-top: 5%;
           display: block;
@@ -57,6 +58,7 @@
           }
       }
   }
+ 
   
   }
 }
@@ -68,22 +70,19 @@
     height: 20%;
     flex-wrap: wrap;
     background-color:white;
-    margin-top: 10%;
-    margin-bottom: 15%;
+    margin-top: 15%;
+    margin-bottom: 25%;
       .detail{
         width: 15%;
         height: 15%;
      &:hover { 
       border-color: black !important;
-      border: 0.25em solid !important; 
+      border: 0.15em solid !important; 
       border-radius: 5%; 
     }
       
       
   }
-
- 
-
 
 
 
