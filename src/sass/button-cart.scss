@@ -1,8 +1,18 @@
 
 .cart-button{
-  width: 8rem !important;
-  height: 2rem !important;
+  width: 9rem !important;
+  height: 3rem !important;
   font-size: 1.5rem !important;
+  background-color: rgb(74, 173, 73);
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  display: inline-block;
+border-radius: 10px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
 }
 .dropdown {
   position: relative;
@@ -12,7 +22,7 @@
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #118b96;
+  background-color: #155F87;
   margin-left: -120%;
   min-width: 20rem !important;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -27,6 +37,7 @@
 .dropdown:hover .dropdown-content {
   display: block;
 }
+
 
 .reset-button {
   
