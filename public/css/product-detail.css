@@ -19,11 +19,13 @@
 }
 .container-detail h3, .container-detail p {
   margin-top: 5%;
+  color: black;
 }
 .container-detail .description {
   text-align: justify;
   margin-top: 3%;
   margin-bottom: 3%;
+  text-decoration: none;
 }
 .container-detail .cant {
   display: flex;
@@ -50,8 +52,8 @@
 .container-detail .cant .calculator button {
   margin-top: 5%;
   display: block;
-  width: 22px;
-  height: 22px;
+  width: 3rem;
+  height: 2rem;
   border-radius: 50%;
   border: none;
   cursor: pointer;
@@ -78,27 +80,6 @@
   border-color: black !important;
   border: 0.15em solid !important;
   border-radius: 5%;
-}
-
-#like-button {
-  width: 8rem;
-  font-size: 2rem !important;
-  border: none !important;
-  background-color: transparent !important;
-  margin-left: 3%;
-  margin-top: 5%;
-}
-
-#cart-button {
-  width: 8rem;
-  font-size: 2rem !important;
-  border: none !important;
-  background-color: transparent !important;
-  margin-top: 5%;
-}
-
-#like-button.is-active i {
-  color: red;
 }
 
 #lovetoo .lovetootexth4 {
@@ -156,7 +137,7 @@
 }
 #lovetoo .btn-left,
 #lovetoo .btn-right {
-  color: #F8F5F5;
+  color: #f8f5f5;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -164,14 +145,14 @@
   height: 30px;
   border-radius: 50%;
   background-color: transparent;
-  border: 2px solid #DBD8D8;
+  border: 2px solid #dbd8d8;
   transition: background-color 0.3s;
   padding: 0.3%;
   position: absolute;
-  bottom: -55%;
+  top: 71%;
 }
 #lovetoo .btn-left {
-  margin-left: 5%;
+  margin-left: 3%;
 }
 #lovetoo .btn-right {
   right: 3%;
@@ -291,17 +272,11 @@ header > nav button {
   margin-bottom: -0.3rem;
 }
 
-@media (max-width: 900px) {
+@media (min-width: 360px) and (max-width: 900px) {
   .header-logo img {
     width: 12rem;
     height: 4rem;
-  }
-  header nav button {
-    height: 1.8rem;
-    width: 5.8rem;
-    border-radius: 10px;
-    border: none;
-    font-size: 1rem;
+    margin-left: 3rem;
   }
   #button-suscribe {
     transition: ease-in-out all 0.4s;
@@ -326,39 +301,35 @@ header > nav button {
     overflow: hidden;
     color: #FFEF15;
   }
-}
-@media (max-width: 700px) {
   header {
     display: flex;
     flex-direction: column;
   }
-  .img-shop {
-    height: 2.2rem;
-    width: 1.8rem;
+  header li > img {
+    width: 50%;
+    height: 50%;
+    margin: 0;
   }
-  nav {
-    margin-bottom: 0.5rem;
+  header > img {
+    width: 10%;
+    height: 10%;
   }
-}
-@media only screen and (min-width: 360px) and (max-width: 569px) {
-  #button-suscribe {
-    width: 2.2rem;
+  header .header-logo {
+    display: flex;
+    justify-content: center;
   }
-  #button-suscribe:hover {
-    width: 7.3rem;
-    filter: brightness(1.1);
+  header .header-logo img {
+    margin: 0;
   }
-  #button-star-figure {
-    width: 1.3rem;
-    margin-left: 5px;
+  header nav {
+    width: 100%;
+    margin: 0 0 20px 0;
+    display: flex;
+    justify-content: center;
   }
-  #button-suscribe-side {
-    font-size: 0.9rem;
-    margin-left: 0.8rem;
-  }
-  nav {
-    margin-right: 0.01rem;
-    margin-left: 1.5rem;
+  header nav > ul {
+    display: flex;
+    justify-content: space-around;
   }
 }
 #container {
@@ -424,7 +395,7 @@ header > nav button {
 }
 .like-button i {
   margin-top: 3rem;
-  margin-left: 10rem;
+  margin-left: 15rem;
   font-size: 1.5rem;
   color: #12ff45;
 }
@@ -436,6 +407,66 @@ header > nav button {
 }
 .like-button.clicked i {
   color: red;
+}
+
+.cart-button {
+  width: 8rem !important;
+  height: 2rem !important;
+  font-size: 1.5rem !important;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #118b96;
+  margin-left: -120%;
+  min-width: 20rem !important;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content li {
+  padding: 12px 16px;
+  cursor: pointer;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.reset-button {
+  background-color: rgb(0, 255, 234);
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  display: inline-block;
+  font-size: 1rem;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+}
+
+.reset-button:hover {
+  background-color: darkred;
+  color: white;
+}
+
+.displayNav {
+  position: relative;
+}
+
+#contadorCarrito {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
 }
 
 /*# sourceMappingURL=product-detail.css.map */
