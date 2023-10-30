@@ -145,10 +145,10 @@
   background-color: transparent;
   transition: background-color 0.3s;
   position: absolute;
-  bottom: 45%;
+  bottom: -105%;
 }
 #lovetoo .btn-left {
-  margin-left: 6%;
+  margin-left: 4%;
 }
 #lovetoo .btn-right {
   right: 2.3%;
