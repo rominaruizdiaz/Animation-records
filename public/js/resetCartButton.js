@@ -14,5 +14,3 @@ resetButton.addEventListener('click', () => {
   });
 });
 
-
-

@@ -102,7 +102,6 @@
   margin-bottom: 3%;
   position: relative;
   border-radius: 10px;
-  position: relative;
 }
 #lovetoo img {
   width: 18vw;
@@ -143,19 +142,17 @@
   justify-content: center;
   width: 30px;
   height: 30px;
-  border-radius: 50%;
   background-color: transparent;
-  border: 2px solid #dbd8d8;
   transition: background-color 0.3s;
-  padding: 0.3%;
   position: absolute;
-  top: 71%;
+  bottom: 45%;
 }
 #lovetoo .btn-left {
-  margin-left: 3%;
+  margin-left: 6%;
 }
 #lovetoo .btn-right {
-  right: 3%;
+  right: 2.3%;
+  margin-bottom: 0.3%;
 }
 
 body {
