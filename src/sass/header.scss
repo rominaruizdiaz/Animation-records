@@ -6,54 +6,49 @@
   list-style: none;
   text-decoration: none;
 }
-
 header {
-  background-color: #155f87;
-  height: 17vh;
+  background-color: #155F87;
+  height: 7rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
-
-  >img {
-    margin-left: 50px;
+  .header-logo {
+    >img {
+      margin-left: 3rem;
+    }
   }
-  
   >nav {
     display: flex;
-    height: 80%;
+    height: 60%;
     align-items: end;
     margin-right: 50px;
-  
     > ul {
       display: flex;
       align-items: end;
-      gap: 20px;
-
+      gap: 10px;
       >li > ul {
         width: 200px;
         display: flex;
         flex-direction: column;
-        background-color: #71e5f7;
-        box-shadow: #0096e7;
+        background-color: #71E5F7;
+        box-shadow: #0096E7;
         position: absolute;
         padding: 14px 0px;
         visibility: hidden;
         opacity: 0;
         z-index: 10;
         transition: all 300ms ease;
-
         > li {
           display: block;
           padding: 6px;
           transition: all 300ms ease;
           text-align: center;
-
           >a {
             color: black;
           }
         }
         > li:hover {
-          background-color: #00c1dd;
+          background-color: #00C1DD;
           transform: scale(1.1);
         }
       }
@@ -63,41 +58,121 @@ header {
       }
     }
     button {
-      height: 50px;
-      width: 200px;
+      height: 2rem;
+      width: 8rem;
       border-radius: 10px;
       border: none;
-      font-size: 1.3em;
+      font-size: 1.3rem;
     }
   }
 }
-
 #home {
-  background-color: #0096e7;
+  background-color: #0096E7;
 }
 #categories {
-  background-color: #00c1dd;
+  background-color: #00C1DD;
 }
 #button-suscribe {
   transition: ease-in-out all 0.4s;
   width: 50px;
   display: flex;
   align-items: center;
-  background-color: #47d47f;
+  background-color: #47D47F;
   filter: brightness(0.9);
 }
 #button-suscribe:hover {
-  width: 200px;
+  width: 9.5rem;
   filter: brightness(1.1);
 }
 #button-star-figure {
   float: left;
-  width: 40px;
+  width: 2rem;
   margin-left: 5px;
 }
 #button-suscribe-side {
-  font-size: 25px;
-  margin-left: 20px;
+  font-size: 1.3rem;
+  margin-left: 1rem;
   overflow: hidden;
-  color: #ffef15;
+  color: #FFEF15;
+}
+.img-shop {
+  height: 2.6rem;
+  width: 2.4rem;
+  margin-bottom: -0.3rem;
+}
+@media (max-width: 900px) {
+  .header-logo {
+    img {
+      width: 12rem;
+      height: 4rem;
+    }
+  }
+  header{
+    nav {
+      button {
+      height: 1.8rem;
+      width: 5.8rem;
+      border-radius: 10px;
+      border: none;
+      font-size: 1rem;
+      }
+    }
+  }
+  #button-suscribe {
+    transition: ease-in-out all 0.4s;
+    width: 2.5rem;
+    display: flex;
+    align-items: center;
+    background-color: #47D47F;
+    filter: brightness(0.9);
+  }
+  #button-suscribe:hover {
+    width: 7.5rem;
+    filter: brightness(1.1);
+  }
+  #button-star-figure {
+    float: left;
+    width: 1.5rem;
+    margin-left: 5px;
+  }
+  #button-suscribe-side {
+    font-size: 1rem;
+    margin-left: 1rem;
+    overflow: hidden;
+    color: #FFEF15;
+  }
+}
+@media (max-width: 700px) {
+  header {
+    display: flex;
+    flex-direction: column;
+  }
+  .img-shop {
+  height: 2.2rem;
+  width: 1.8rem;
+  }
+  nav {
+    margin-bottom: 0.5rem;
+  }
+}
+@media only screen and (min-width: 360px) and (max-width:569px) {
+  #button-suscribe {
+    width: 2.2rem;
+  }
+  #button-suscribe:hover {
+    width: 7.3rem;
+    filter: brightness(1.1);
+  }
+  #button-star-figure {
+    width: 1.3rem;
+    margin-left: 5px;
+  }
+  #button-suscribe-side {
+    font-size: 0.9rem;
+    margin-left: 0.8rem;
+  }
+  nav {
+    margin-right: 0.01rem;
+    margin-left: 1.5rem;
+  }
 }

@@ -6,11 +6,8 @@
     list-style: none;
     text-decoration: none;
 }
-body{
-    background: rgb(162, 224, 255);
-}
 
-header {
+.header-main {
 
      .cabecera {
         text-align: center;
@@ -19,11 +16,11 @@ header {
     p {
         text-align: center;
         color: white;
-        margin: 5%;
+        margin: 2%;
     }
 }
 
-section {
+.section-product {
     margin: 0 10%;
     background-color: #EFEFEF;
     border-radius: 5%;
@@ -58,4 +55,8 @@ section {
     justify-content: center;
     color: white;
     background-color: transparent;
+    margin: 1% 0;
+}
+.numbers-style {
+    margin-left: 1%;
 }

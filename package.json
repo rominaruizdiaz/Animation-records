@@ -23,8 +23,8 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "sass": "sass ./src/sass/section-page.scss ./public/css/section-page.css",
-    "sass-w": "sass --watch ./src/sass/section-page.scss ./public/css/section-page.css"
+    "sass-w": "sass --watch ./src/sass/styles.scss ./public/css/styles.css",
+    "sass": "sass --watch ./src/sass/section-page.scss ./public/css/section-page.css"
   },
   "author": "",
   "license": "ISC",

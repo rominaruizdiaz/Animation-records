@@ -9,8 +9,8 @@
 </head>
 
 <body>
-  <header>
-    <img src="/public/assets/imagenes/logo.png" alt="disney shop logo">
+  <header><div class="header-logo">
+    <img src="/public/assets/imagenes/logo.png" alt="disney shop logo"></div>
     <nav>
       <ul>
         <li>
@@ -21,7 +21,7 @@
         <li>
           <button id="categories" class="categories-drop-down-button">Categories</button>
           <ul>
-            <li><a href="">Red</a></li>
+            <li><a href="section-page.html">Red</a></li>
             <li><a href="">Cars</a></li>
             <li><a href="">Buscando a Nemo</a></li>
             <li><a href="">Elementals</a></li>
@@ -47,7 +47,6 @@
   </header>
   <main>
     <section class="container-carousel">
-      <div class="carruseles">
         <div class="slider-section">
           <img class="mySlides" src="../assets/imagenes/banner1.png" alt="..." />
         </div>
@@ -66,7 +65,6 @@
         <div class="slider-section">
           <img class="mySlides" src="../assets/imagenes/banner6.png" alt="..." />
         </div>
-      </div>
     </section>
     <div class="btn-left" id="btn-left">
       <i class="fas fa-chevron-left" onclick="plusDivs(-1)"></i>
@@ -84,29 +82,47 @@
         <span class="demo" onclick="currentDiv(6)"></span>
       </div>
     </section>
-    <section class="categories">
+    <section class="container-categories">
       <h1>Nuestras colecciones</h1>
-      <section class="container-cards">
-        <div class="category-red">
-          <h2>Colección Red</h2>
-        </div>
-        <div class="category-cars">
-          <h2>Colección Cars</h2>
-        </div>
-        <div class="category-nemo">
-          <h2>Colección Nemo</h2>
-        </div>
-        <div class="category-elements">
-          <h2>Colección Elements</h2>
-        </div>
-        <div class="category-up">
-          <h2>Colección Up</h2>
-        </div>
-        <div class="category-toy-story">
-          <h2>Colección Toy Story</h2>
-        </div>
+      <section class="container-cards-categories">
+          <div class="category">
+            <a href="section-page.html">
+              <img src="../assets/imagenes/category-red.png" alt="">
+            </a>
+            <h2>Colección Red</h2>
+          </div>
+          <div class="category">
+              <h2>Colección Cars</h2>
+              <a href="section-page.html">
+                <img src="../assets/imagenes/category-cars.png" alt="">
+              </a>
+          </div>
+          <div class="category">
+              <h2>Colección Nemo</h2>
+              <a href="section-page.html">
+               <img src="../assets/imagenes/category-nemo.png" alt="">
+              </a>
+          </div>
+          <div class="category">
+              <h2>Colección Elements</h2>
+              <a href="section-page.html">
+                <img src="../assets/imagenes/category.elements.png" alt="">
+              </a>
+          </div>
+          <div class="category">
+              <h2>Colección Up</h2>
+              <a href="section-page.html">
+                <img src="../assets/imagenes/category-up.png" alt="">
+              </a>
+          </div>
+          <div class="category">
+              <h2>Colección Toy Story</h2>
+              <a href="section-page.html">
+                <img src="../assets/imagenes/category-toy-story.png" alt="">
+              </a>
+          </div>
       </section>
-    </section>
+  </section>
 
     <section id="form">
 
