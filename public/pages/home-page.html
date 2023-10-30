@@ -9,8 +9,10 @@
 </head>
 
 <body>
-  <header><div class="header-logo">
-    <img src="/public/assets/imagenes/logo.png" alt="disney shop logo"></div>
+  <header>
+    <div class="header-logo">
+      <img src="/public/assets/imagenes/logo.png" alt="disney shop logo">
+    </div>
     <nav>
       <ul>
         <li>
@@ -48,8 +50,11 @@
     </nav>
   </header>
   <main>
-    <section class="container-carousel">
-    
+  <section class="container-carousel">
+      <div id="btn-left">
+        <img src="/public/assets/imagenes/left-arrow-backup-2-svgrepo-com.svg" class="fas fa-chevron-left" onclick="plusDivs(-1)">
+      </div>
+      <div id="slider-images-section">
         <div class="slider-section">
           <img class="mySlides" src="../assets/imagenes/banner1.png" alt="..." />
         </div>
@@ -69,14 +74,11 @@
           <img class="mySlides" src="../assets/imagenes/banner6.png" alt="..." />
         </div>
       </div>
-    </section>
-    <div class="btn-left" id="btn-left">
-      <i class="fas fa-chevron-left" onclick="plusDivs(-1)"></i>
-    </div>
-    <div class="btn-right" id="btn-right">
-      <i class="fas fa-chevron-right" onclick="plusDivs(1)"></i>
-    </div>
-    <section id="carouselExampleIndicators">
+      <div id="btn-right">
+        <img src="/public/assets/imagenes/right-arrow-backup-2-svgrepo-com.svg" class="fas fa-chevron-right" onclick="plusDivs(1)"></img>
+      </div>
+  </section>
+  <section id="carouselExampleIndicators">
       <div class="carousel-indicators">
         <span class="demo" onclick="currentDiv(1)"></span>
         <span class="demo" onclick="currentDiv(2)"></span>
@@ -85,8 +87,9 @@
         <span class="demo" onclick="currentDiv(5)"></span>
         <span class="demo" onclick="currentDiv(6)"></span>
       </div>
-    </section>
-    <section class="container-categories">
+  </section>
+
+  <section class="container-categories">
       <h1>Nuestras colecciones</h1>
       <section class="container-cards-categories">
           <div class="category">

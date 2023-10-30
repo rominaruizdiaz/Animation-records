@@ -5,11 +5,12 @@
 .container-categories h1 {
     font-size: 2rem;
     text-align: center;
+    margin-top: 4%;
 }
 .container-cards-categories {
     padding: 4.3rem;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     gap: 3rem;
 }
 .container-cards-categories img{

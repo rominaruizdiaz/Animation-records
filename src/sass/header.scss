@@ -100,22 +100,13 @@ header {
   width: 2.4rem;
   margin-bottom: -0.3rem;
 }
-@media (max-width: 900px) {
+
+@media (min-width: 360px) and (max-width: 900px) {
   .header-logo {
     img {
       width: 12rem;
       height: 4rem;
-    }
-  }
-  header{
-    nav {
-      button {
-      height: 1.8rem;
-      width: 5.8rem;
-      border-radius: 10px;
-      border: none;
-      font-size: 1rem;
-      }
+      margin-left: 3rem;
     }
   }
   #button-suscribe {
@@ -141,38 +132,38 @@ header {
     overflow: hidden;
     color: #FFEF15;
   }
-}
-@media (max-width: 700px) {
-  header {
+
+header {
+  display: flex;
+  flex-direction: column;
+
+  li > img {
+    width: 50%;
+    height: 50%;
+    margin: 0;
+  }
+  > img {
+    width: 10%;
+    height: 10%;
+  }
+  .header-logo {
     display: flex;
-    flex-direction: column;
-  }
-  .img-shop {
-  height: 2.2rem;
-  width: 1.8rem;
-  }
-  nav {
-    margin-bottom: 0.5rem;
-  }
-}
-@media only screen and (min-width: 360px) and (max-width:569px) {
-  #button-suscribe {
-    width: 2.2rem;
-  }
-  #button-suscribe:hover {
-    width: 7.3rem;
-    filter: brightness(1.1);
-  }
-  #button-star-figure {
-    width: 1.3rem;
-    margin-left: 5px;
-  }
-  #button-suscribe-side {
-    font-size: 0.9rem;
-    margin-left: 0.8rem;
+    justify-content: center;
+    img {
+      margin: 0;
+    }
   }
   nav {
-    margin-right: 0.01rem;
-    margin-left: 1.5rem;
+    width: 100%;
+    margin: 0 0 20px 0;
+    display: flex;
+    justify-content: center;
+    > ul {
+      display: flex;
+      justify-content: space-around;
+      
+      }
+    }
   }
 }
+
