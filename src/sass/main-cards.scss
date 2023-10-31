@@ -11,7 +11,7 @@
 .container-cards-categories {
     padding: 4.3rem;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
     gap: 3rem;
 }
 .container-cards-categories img{
@@ -50,8 +50,8 @@
     .container-cards-categories {
         padding: 2rem;
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
-        gap: 1.5rem;
+        grid-template-columns: repeat(auto-fit, minmax(35%, 1fr));
+        gap: 2rem;
     }
 }
 @media (max-width: 815px) {

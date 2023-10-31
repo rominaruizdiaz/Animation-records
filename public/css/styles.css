@@ -172,7 +172,7 @@ header > nav button {
     justify-content: space-around;
   }
 }
-@media only screen and (min-width: 360px) and (max-width: 500px) {
+@media only screen and (min-width: 279px) and (max-width: 500px) {
   nav button {
     height: 1.8rem !important;
     width: 5rem !important;
@@ -302,7 +302,7 @@ header > nav button {
 .container-cards-categories {
   padding: 4.3rem;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
   gap: 3rem;
 }
 
@@ -347,8 +347,8 @@ header > nav button {
   .container-cards-categories {
     padding: 2rem;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
-    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(35%, 1fr));
+    gap: 2rem;
   }
 }
 @media (max-width: 815px) {
@@ -458,7 +458,7 @@ footer {
   color: aliceblue;
 }
 
-@media only screen and (min-width: 360px) and (max-width: 580px) {
+@media only screen and (min-width: 279px) and (max-width: 580px) {
   footer {
     display: flex;
     flex-direction: column;
