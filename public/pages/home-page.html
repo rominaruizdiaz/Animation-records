@@ -9,7 +9,7 @@
 </head>
 
 <body>
-  <header>
+    <header>
     <div class="header-logo">
       <img src="/public/assets/imagenes/logo.png" alt="disney shop logo">
     </div>
@@ -48,9 +48,9 @@
         </li>
       </ul>
     </nav>
-  </header>
-  <main>
-  <section class="container-carousel">
+    </header>
+    <main>
+    <section class="container-carousel">
       <div id="btn-left">
         <img src="/public/assets/imagenes/left-arrow-backup-2-svgrepo-com.svg" class="fas fa-chevron-left" onclick="plusDivs(-1)">
       </div>
@@ -77,8 +77,8 @@
       <div id="btn-right">
         <img src="/public/assets/imagenes/right-arrow-backup-2-svgrepo-com.svg" class="fas fa-chevron-right" onclick="plusDivs(1)"></img>
       </div>
-  </section>
-  <section id="carouselExampleIndicators">
+    </section>
+    <section id="carouselExampleIndicators">
       <div class="carousel-indicators">
         <span class="demo" onclick="currentDiv(1)"></span>
         <span class="demo" onclick="currentDiv(2)"></span>
@@ -87,9 +87,8 @@
         <span class="demo" onclick="currentDiv(5)"></span>
         <span class="demo" onclick="currentDiv(6)"></span>
       </div>
-  </section>
-
-  <section class="container-categories">
+    </section>
+    <section class="container-categories">
       <h1>Nuestras colecciones</h1>
       <section class="container-cards-categories">
           <div class="category">
@@ -129,51 +128,45 @@
               </a>
           </div>
       </section>
-  </section>
-
-    <section id="form">
-
-      <div class="form-container">
-        <p class="exclusivo">Contenidos originales exclusivos, películas de éxito y series para maratonear</p>
-        <p>Email: <input type="text"> <button class="suscribir">Suscríbete</button></p>
-        <p class="cancela">* Cancela cuando quieras</p>
-
-      </div>
-
     </section>
 
+    <form onsubmit="subscribe()">
+      <p class="exclusivo">Contenidos originales exclusivos, películas de éxito y series para maratonear</p>
+      <label for="emailConteiner">Email:</label>
+      <input id="emailConteiner" name="emailConteiner" type="email" placeholder="username@example.com" required>
+      <button id="button" type="submit">Suscríbete</button>
+      <p class="cancela">* Cancela cuando quieras</p>
+    </form>
+
+    </main>
+    <footer>
+      <div>
+        <div class="facebook">
+          <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
+            <img src="../assets/imagenes/icon_facebook_.png">
+          </a>
+        </div>
+        <div class="instagram">
+          <a href="https://instagram.com/" target="_blank" rel="noopener noreferrer">
+            <img src="../assets/imagenes/icon_instagram_.png" alt="icono instagram">
+          </a>
+        </div>
+        <div class="youtube">
+          <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer">
+            <img src="../assets/imagenes/icon_youtube_.png" alt="icono youtube">
+          </a>
+        </div>
+        <div class="github">
+          <a href="https://github.com/rominaruizdiaz/Animation-records.git" target="_blank" rel="noopener noreferrer">
+            <img src="../assets/imagenes/icon_github_.png" alt="icono github">
+          </a>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>Copyright 2023 The Coders Five</p>
+      </div>
+    </footer>
     <script src="../js/slider-indicators.js"></script>
-  </main>
-
-  <footer id="container">
-    <div>
-      <div class="facebook">
-        <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
-          <img src="../assets/imagenes/icon_facebook_.png">
-        </a>
-      </div>
-      <div class="instagram">
-        <a href="https://instagram.com/" target="_blank" rel="noopener noreferrer">
-          <img src="../assets/imagenes/icon_instagram_.png" alt="icono instagram">
-        </a>
-      </div>
-      <div class="youtube">
-        <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer">
-          <img src="../assets/imagenes/icon_youtube_.png" alt="icono youtube">
-        </a>
-      </div>
-      <div class="github">
-        <a href="https://github.com/rominaruizdiaz/Animation-records.git" target="_blank" rel="noopener noreferrer">
-          <img src="../assets/imagenes/icon_github_.png" alt="icono github">
-        </a>
-      </div>
-    </div>
-    <div class="copyright">
-      <p>Copyright 2023 The Coders Five</p>
-    </div>
-  </footer>
-
-</body>
-
-
+    <script src="../js/form.js"></script>
+  </body>
 </html>
