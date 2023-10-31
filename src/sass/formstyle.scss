@@ -1,0 +1,57 @@
+form {
+    background-color: #7CEA72;
+    text-align: center;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+    border-radius: 10px;
+    padding: 5px;
+    line-height: 55px;
+    
+    input {
+        width: 18rem;
+        height: 1.5rem;
+        background-color: #EBFFD3;
+        border-radius: 10px;
+        border: 1.4px solid black;
+    }
+}
+#button {
+    background-color: #5CCD5A;
+    border-radius: 10px;
+    border: 1.4px solid black;
+    width: 10rem;
+    height: 1.5rem;
+    color: #E5FF48;
+}
+.exclusivo {
+    color: rgb(34, 33, 33);
+    font-size: 1.3rem;
+    text-align: center;
+}
+.cancela {
+    font-size: 0.7rem;
+    text-align: end;
+    margin-right: 10vw;
+}
+@media only screen and (min-width: 781px) and (max-width: 910px) {
+    .exclusivo {
+        font-size: 1.1rem;
+    }
+}
+@media only screen and (min-width: 570px) and (max-width:780px) {
+    .exclusivo {
+        font-size: 1rem;
+    }
+    form {
+        line-height: 30px;
+    }
+}
+@media only screen and (min-width: 360px) and (max-width:569px) {
+    .exclusivo {
+        font-size: 0.8rem;
+    }
+    form {
+        line-height: 30px;
+    }
+}

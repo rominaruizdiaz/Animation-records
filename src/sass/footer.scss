@@ -1,0 +1,49 @@
+footer {
+  background-color: #155F87;
+  text-align: center;
+  margin: auto;
+  padding: 1.25rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.facebook {
+  float: left;
+  margin: 1rem;
+}
+.instagram {
+  float: left;
+  margin: 1rem;
+}
+.youtube {
+  float: left;
+  margin: 1rem;
+}
+.github {
+  float: left;
+  margin: 1rem;
+}
+.copyright {
+  margin: 0.6rem;
+  font-style: normal;
+  color: aliceblue;
+}
+@media only screen and (min-width: 360px) and (max-width:569px) {
+  #container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.github {
+	float: left;
+  margin: 15px;
+}
+
+.copyright {
+  margin: 10px;
+  font-style: normal;
+  color: aliceblue;
+}
+
+
