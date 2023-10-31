@@ -1,5 +1,6 @@
 let slideIndex = 0;
 showSlides(slideIndex);
+
 function plusDivs(n) {
     showSlides(slideIndex += n);
 }
@@ -15,5 +16,10 @@ function showSlides(n) {
         slideIndex = Math.floor((slides.length - 1) / slidesPerPage);
         startIndex = slideIndex * slidesPerPage;
     }
+
     $(slides).hide();
+
+    for (let i = startIndex; i < startIndex + slidesPerPage && i < slides.length; i++) {
+        $(slides[i]).show();
+    }
 }
