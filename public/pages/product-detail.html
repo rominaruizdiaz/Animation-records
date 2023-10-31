@@ -1,182 +1,200 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Home Page</title>
   <link rel="stylesheet" href="../css/product-detail.css">
 </head>
-
 <body>
-  <header><div class="header-logo">
-    <img src="/public/assets/imagenes/logo.png" alt="disney shop logo"></div>
+  <header>
+    <div class="header-logo">
+      <img src="/public/assets/imagenes/logo.png" alt="disney shop logo">
+    </div>
     <nav>
       <ul>
-        <li>
-          <button id="home">
-            <a href="home-page.html">
-              Inicio
-            </a>
-          </button>
-        </li>
-        <li>
-          <button id="categories" class="categories-drop-down-button">Categories</button>
-          <ul>
-            <li><a href="section-page.html">Red</a></li>
-            <li><a href="">Cars</a></li>
-            <li><a href="">Buscando a Nemo</a></li>
-            <li><a href="">Elementals</a></li>
-            <li><a href="">Up</a></li>
-            <li><a href="">Toy Story</a></li>
-          </ul>
-        </li>
-        <li>
-          <img src="/public/assets/imagenes/shop.png" alt="shopping cart of disney">
-        </li>
+          <li>
+              <a href="home-page.html">
+                <button id="home">Inicio</button>
+              </a>
+          </li>
+          <li>
+              <button id="categories" class="categories-drop-down-button">Categories</button>
+              <ul>
+                <li><a href="section-page.html">Red</a></li>
+                <li><a href="">Cars</a></li>
+                <li><a href="">Buscando a Nemo</a></li>
+                <li><a href="">Elementals</a></li>
+                <li><a href="">Up</a></li>
+                <li><a href="">Toy Story</a></li>
+              </ul>
+          </li>
+            <div class="displayNav">
+              <ul>
+                <li>
+                  <img src="/public/assets/imagenes/shop.png" alt="shopping cart of disney">
+                </li>
+                <li>
+                  <p id="contadorCarrito">0</p>
+                </li>
+              </ul>
+            </div>
+            <div class="dropdown">
+              <button id="cart-btn-nav"class="dropbtn">Carrito<i id="bascket" class="fa-solid fa-basket-shopping" style="color: #B6BCC8;"></i></button>
+              <div class="dropdown-content">
+                  <li></li>
+                  <button class="reset-button">Vaciar <i class="fa-solid fa-basket-shopping" style="color: #B6BCC8;"></i></button>
+            </div>
       </ul>
     </nav>
   </header>
   <main>
-
-    <main>
-      <section class="container-detail">
+    <section class="container-detail">
+      <div>
         <div>
-          <div>
-            <img class="detail" id="mainImage" onclick="currentDiv(1)" src="../assets/imagenes/taza1.webp" alt="" />
-          </div>
-          <div>
-            <h3>Taza con forma de Mei Lee panda rojo, Red, Disney Store</h3>
-            <p>20.00€</p>
-            <p class="description">
-              Disfruta de unas meriendas pandásticas con esta taza. Inspirada en
-              Mei Lee con la forma de panda rojo, la encantadora taza está
-              rematada con detalles esculpidos.
-            </p>
-            <div class="cant">
-              <div>
-                <p>Cantidad</p>
-              </div>
-              <div><i class="fa-solid fa-minus"></i></div>
-              <div><p>0</p></div>
-              <div><i class="fa-solid fa-plus"></i></div>
+              <img class="detail" id="mainImage" onclick="currentDiv(1)" src="../assets/imagenes/taza1.webp" alt="">
+        </div>
+        <div>
+              <h3 id="title-detail">Taza con forma de Mei Lee panda rojo, Red, Disney Store</h3>
+              <p id="price-detail">20.00€</p>
+              <p class="description" >
+                Disfruta de unas meriendas pandásticas con esta taza. Inspirada en Mei Lee con la forma de panda rojo, la encantadora taza está rematada con detalles esculpidos.
+              </p>
+          <div class="cant">
+            <div>
+                  <p>Cantidad</p>
             </div>
+              <div class="calculator">
+                    <button class="operation decrement">-</button>
+                  <div class="display"><p id="display">0</p></div>
+                    <button class="operation increment">+</button>
+              </div>
           </div>
-          <div>
-            <div class="miniature">
-              <img class="detail" onclick="currentDiv(1)" src="../assets/imagenes/taza1.webp" alt="" />
-              <img class="detail" onclick="currentDiv(2)" src="../assets/imagenes/taza2.webp" alt="" />
+        </div>
+        <div>
+              <button id="like-btn" class="like-button">
+              <i class="fas fa-heart"></i>
+            </button>
+            <button id="cart-btn" class="cart-button">
+              Añadir<i class="fa-solid fa-basket-shopping" style="color: #B6BCC8;"></i>
+            </button>
+        </div>
+        <div class="miniature">
+              <img class="detail" onclick="currentDiv(1)" src="../assets/imagenes/taza1.webp" alt="">
+              <img class="detail" onclick="currentDiv(2)" src="../assets/imagenes/taza2.webp" alt="">
               <img class="detail" onclick="currentDiv(3)" src="../assets/imagenes/taza3.webp" alt="" />
               <img class="detail" onclick="currentDiv(4)" src="../assets/imagenes/taza4.webp" alt="" />
+        </div>
+      </div>
+    </section>
+  <div id="lovetoo-box" >
+    <div id="button-section">
+      <div class="btn-left" id="btn-left" onclick="plusDivs(1)">
+        &#60
+      </div>
+    </div>
+    <h4 class="lovetootexth4">También te puede gustar</h4>
+    <div id="button-section">
+      <div class="btn-right" id="btn-right" onclick="plusDivs(-1)">
+        &#62
+      </div>
+    </div>
+  </div>
+    <section id="lovetoo">
+        <div class="lovetoo-cards">
+          <div class="lovetoo-card-detail">
+            <div class="image-container">
+              <img src="../assets/imagenes/1woodyts37e.jpg" alt="">
             </div>
+            <h5 class="lovetootexth5">Woody</h5>
+            <p class="lovetootextp">37€</p>
+          </div>
+          <div class="lovetoo-card-detail">
+            <div class="image-container">
+              <img src="../assets/imagenes/2chipchop32e.jpg" alt="">
+            </div>
+            <h5 class="lovetootexth5">Chip y Chop</h5>
+            <p class="lovetootextp">32€</p>
+          </div>
+          <div class="lovetoo-card-detail">
+            <div class="image-container">
+              <img src="../assets/imagenes/3osolotso20e.jpg" alt="">
+            </div>
+            <h5 class="lovetootexth5">Oso Lotso</h5>
+            <p class="lovetootextp">20€</p>
+          </div>
+          <div class="lovetoo-card-detail">
+            <div class="image-container">
+              <img src="../assets/imagenes/4Ursulafunko17e.jpg" alt="">
+            </div>
+            <h5 class="lovetootexth5">Funko Ursula</h5>
+            <p class="lovetootextp">17€</p>
+          </div>
+          <div class="lovetoo-card-detail">
+            <div class="image-container">
+              <img src="../assets/imagenes/5disfrazrapunzel50e.jpg" alt="">
+            </div>
+            <h5 class="lovetootexth5">Disfraz Punzel</h5>
+            <p class="lovetootextp">50€ </p>
+          </div>
+          <div class="lovetoo-card-detail">
+            <div class="image-container">
+              <img src="../assets/imagenes/6sebastian.27.90€.jpg" alt="">
+            </div>
+            <h5 class="lovetootexth5">Sebastian</h5>
+            <p class="lovetootextp">34€</p>
+          </div>
+          <div class="lovetoo-card-detail">
+            <div class="image-container">
+              <img src="../assets/imagenes/7galerna.18e.jpg" alt="">
+            </div>
+            <h5 class="lovetootexth5">Galerna</h5>
+            <p class="lovetootextp">18€</p>
+          </div>
+          <div class="lovetoo-card-detail">
+            <div class="image-container">
+              <img src="../assets/imagenes/8tazajack14e.jpg" alt="">
+            </div>
+            <h5 class="lovetootexth5">Taza Jack</h5>
+            <p class="lovetootextp">14€</p>
           </div>
         </div>
-      </section>
-
-  
-      <script src="../js/slider-indicators.js"></script>
-      <section id="lovetoo">
-        <h4 class="lovetootexth4">También te puede gustar</h4>
-        <div class="lovetoo-cards">
-            <div class="lovetoo-card-detail">
-                <div class="image-container">
-                    <img src="../assets/imagenes/1woodyts37e.jpg" alt="">
-                </div>
-                <h5 class="lovetootexth5">Woody</h5>
-                <p class="lovetootextp">37€</p>
-            </div>
-            <div class="lovetoo-card-detail">
-                <div class="image-container">
-                    <img src="../assets/imagenes/2chipchop32e.jpg" alt="">
-                </div>
-                <h5 class="lovetootexth5">Chip y Chop</h5>
-                <p class="lovetootextp">32€</p>
-            </div>
-            <div class="lovetoo-card-detail">
-                <div class="image-container">
-                    <img src="../assets/imagenes/3osolotso20e.jpg" alt="">
-                </div>
-                <h5 class="lovetootexth5">Oso Lotso</h5>
-                <p class="lovetootextp">20€</p>
-            </div>
-            <div class="lovetoo-card-detail">
-                <div class="image-container">
-                    <img src="../assets/imagenes/4Ursulafunko17e.jpg" alt="">
-                </div>
-                <h5 class="lovetootexth5">Funko Ursula</h5>
-                <p class="lovetootextp">17€</p>
-            </div>
-            <!-- <div class="lovetoo-card-detail">
-                <div class="image-container">
-                    <img src="../assets/imagenes/5disfrazrapunzel50e.jpg" alt="">
-                </div>
-                <h5 class="lovetootexth5">Disfraz Punzel</h5>
-                <p class="lovetootextp">50€ </p>
-            </div>
-            <div class="lovetoo-card-detail">
-                <div class="image-container">
-                    <img src="../assets/imagenes/6sebastian.27.90€.jpg" alt="">
-                </div>
-                <h5 class="lovetootexth5">Sebastian</h5>
-                <p class="lovetootextp">34€</p>
-            </div>
-            <div class="lovetoo-card-detail">
-                <div class="image-container">
-                    <img src="../assets/imagenes/7galerna.18e.jpg" alt="">
-                </div>
-                <h5 class="lovetootexth5">Galerna</h5>
-                <p class="lovetootextp">18€</p>
-            </div>
-            <div class="lovetoo-card-detail">
-                <div class="image-container">
-                    <img src="../assets/imagenes/8tazajack14e.jpg" alt="">
-                </div>
-                <h5 class="lovetootexth5">Taza Jack</h5>
-                <p class="lovetootextp">14€</p>
-            </div> -->
-        </div>
-        <div id="button-section">
-            <div class="btn-left" id="btn-left" onclick="plusDivs(-1)">
-                &#60
-            </div>
-            <div class="btn-right" id="btn-right" onclick="plusDivs(1)">
-                &#62
-            </div>
-        </div>
+      </div>
     </section>
-    <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="../js/toolove.js"></script> -->
-    </main>
-  
-    <footer id="container">
-      <div>
-        <div class="facebook">
-          <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
-            <img src="../assets/imagenes/icon_facebook_.png">
-          </a>
-        </div>
-        <div class="instagram">
-          <a href="https://instagram.com/" target="_blank" rel="noopener noreferrer">
-            <img src="../assets/imagenes/icon_instagram_.png" alt="icono instagram">
-          </a>
-        </div>
-        <div class="youtube">
-          <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer">
-            <img src="../assets/imagenes/icon_youtube_.png" alt="icono youtube">
-          </a>
-        </div>
-        <div class="github">
-          <a href="https://github.com/rominaruizdiaz/Animation-records.git" target="_blank" rel="noopener noreferrer">
-            <img src="../assets/imagenes/icon_github_.png" alt="icono github">
-          </a>
-        </div>
+  </main>
+  <footer id="container">
+    <div>
+      <div class="facebook">
+        <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
+          <img src="../assets/imagenes/icon_facebook_.png">
+        </a>
       </div>
-      <div class="copyright">
-        <p>Copyright 2023 The Coders Five</p>
+      <div class="instagram">
+        <a href="https://instagram.com/" target="_blank" rel="noopener noreferrer">
+          <img src="../assets/imagenes/icon_instagram_.png" alt="icono instagram">
+        </a>
       </div>
-    </footer>
-    <script src="../js/miniature.js"></script>
-    <script src="../js/cartShopping.js"></script>
+      <div class="youtube">
+        <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer">
+          <img src="../assets/imagenes/icon_youtube_.png" alt="icono youtube">
+        </a>
+      </div>
+      <div class="github">
+        <a href="https://github.com/rominaruizdiaz/Animation-records.git" target="_blank" rel="noopener noreferrer">
+          <img src="../assets/imagenes/icon_github_.png" alt="icono github">
+        </a>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>Copyright 2023 The Coders Five</p>
+    </div>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="../js/miniature.js"></script>
+  <script src="../js/cartButtonDropdwon.js"></script>
   <script src="../js/likeButton.js"></script>
-  </body>
+  <script src="../js/resetCartButton.js"></script>
+  <script src="../js/counter.js"></script>
+  <script src="../js/toolove.js"></script>
+</body>
 </html>

@@ -112,17 +112,11 @@ header > nav button {
   margin-bottom: -0.3rem;
 }
 
-@media (max-width: 900px) {
+@media (min-width: 360px) and (max-width: 900px) {
   .header-logo img {
     width: 12rem;
     height: 4rem;
-  }
-  header nav button {
-    height: 1.8rem;
-    width: 5.8rem;
-    border-radius: 10px;
-    border: none;
-    font-size: 1rem;
+    margin-left: 3rem;
   }
   #button-suscribe {
     transition: ease-in-out all 0.4s;
@@ -147,42 +141,38 @@ header > nav button {
     overflow: hidden;
     color: #FFEF15;
   }
-}
-@media (max-width: 700px) {
   header {
     display: flex;
     flex-direction: column;
   }
-  .img-shop {
-    height: 2.2rem;
-    width: 1.8rem;
+  header li > img {
+    width: 50%;
+    height: 50%;
+    margin: 0;
   }
-  nav {
-    margin-bottom: 0.5rem;
+  header > img {
+    width: 10%;
+    height: 10%;
   }
-}
-@media only screen and (min-width: 360px) and (max-width: 569px) {
-  #button-suscribe {
-    width: 2.2rem;
+  header .header-logo {
+    display: flex;
+    justify-content: center;
   }
-  #button-suscribe:hover {
-    width: 7.3rem;
-    filter: brightness(1.1);
+  header .header-logo img {
+    margin: 0;
   }
-  #button-star-figure {
-    width: 1.3rem;
-    margin-left: 5px;
+  header nav {
+    width: 100%;
+    margin: 0 0 20px 0;
+    display: flex;
+    justify-content: center;
   }
-  #button-suscribe-side {
-    font-size: 0.9rem;
-    margin-left: 0.8rem;
-  }
-  nav {
-    margin-right: 0.01rem;
-    margin-left: 1.5rem;
+  header nav > ul {
+    display: flex;
+    justify-content: space-around;
   }
 }
-.form-container {
+form {
   background-color: #7CEA72;
   text-align: center;
   margin-left: 5%;
@@ -192,20 +182,21 @@ header > nav button {
   padding: 5px;
   line-height: 55px;
 }
-
-button {
-  background-color: #5CCD5A;
-  border-radius: 10px;
-  border: 1.4px solid black;
-  width: 10rem;
-}
-
-input {
+form input {
   width: 18rem;
   height: 1.5rem;
   background-color: #EBFFD3;
   border-radius: 10px;
   border: 1.4px solid black;
+}
+
+#button {
+  background-color: #5CCD5A;
+  border-radius: 10px;
+  border: 1.4px solid black;
+  width: 10rem;
+  height: 1.5rem;
+  color: #E5FF48;
 }
 
 .exclusivo {
@@ -220,11 +211,6 @@ input {
   margin-right: 10vw;
 }
 
-.suscribir {
-  height: 1.5rem;
-  color: #E5FF48;
-}
-
 @media only screen and (min-width: 781px) and (max-width: 910px) {
   .exclusivo {
     font-size: 1.1rem;
@@ -234,7 +220,7 @@ input {
   .exclusivo {
     font-size: 1rem;
   }
-  .form-container {
+  form {
     line-height: 30px;
   }
 }
@@ -242,14 +228,11 @@ input {
   .exclusivo {
     font-size: 0.8rem;
   }
-  .form-container {
+  form {
     line-height: 30px;
   }
-  nav {
-    height: auto;
-  }
 }
-#container {
+footer {
   background-color: #155F87;
   text-align: center;
   margin: auto;
@@ -302,7 +285,6 @@ input {
   color: aliceblue;
 }
 
-
 * {
   margin: 0;
   padding: 0;
@@ -321,42 +303,119 @@ input {
   margin: 2%;
 }
 
-.section-product {
-  margin: 0 10%;
-  background-color: #EFEFEF;
-  border-radius: 5%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  padding: 1rem;
-  gap: 1rem;
+#pagination-container {
+  margin-bottom: 1%;
 }
-.section-product article {
-  width: 30%;
-}
-.section-product article div {
-  width: 100%;
-  height: auto;
-  background-color: white;
-  border-radius: 5%;
-}
-.section-product article div > img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+
+#taza {
   border-radius: 5%;
 }
 
-.numbers {
+#diadema {
+  border-radius: 5%;
+}
+
+.container-section-product {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 1.5%;
+}
+
+.card-content-red {
+  background-color: #EFEFEF;
+  padding: 10px;
+  overflow: hidden;
+  width: 90%;
   display: flex;
   justify-content: center;
-  color: white;
-  background-color: transparent;
-  margin: 1% 0;
+  align-items: center;
+  flex-wrap: wrap;
+  border-radius: 2%;
 }
 
-.numbers-style {
-  margin-left: 1%;
+.card-red-products {
+  border: 1px solid #eee;
+  background: #fff;
+  margin-bottom: 10px;
+  padding: 10px;
+  box-shadow: 0 0 10px 0 #eee;
+  width: 25%;
+  margin: 15px;
+  position: relative;
+  cursor: pointer;
+  border-radius: 10%;
+}
+
+.card-red-products img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+}
+
+.simple-pagination ul {
+  padding: 0;
+  list-style: none;
+  text-align: center;
+  margin-left: 10px;
+}
+
+.simple-pagination li {
+  display: inline-block;
+  margin: 2px;
+}
+
+.simple-pagination li a, .simple-pagination li span {
+  display: block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  background-color: #fff;
+  text-align: center;
+  text-decoration: none;
+  color: #252525;
+  border-radius: 4px;
+  margin: 5px;
+  box-shadow: inset 0 5px 10px rgba(0, 0, 0, 0.1), 0 2px 5px rgba(0, 0, 0, 0.5);
+  transition: all 0.5s ease;
+}
+
+.simple-pagination li a:hover {
+  background: #000;
+  color: #fff;
+}
+
+.simple-pagination .current {
+  color: #fff;
+  background-color: #000;
+  border-color: rgb(255, 255, 255);
+  border: 1px solid;
+  cursor: pointer;
+}
+
+.simple-pagination .prev.current,
+.simple-pagination .next.current {
+  background: #222;
+  border: none;
+}
+
+.redirecc-home {
+  width: 150px;
+  height: 50px;
+  background-color: white;
+  border-radius: 15px;
+  text-align: center;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-bottom: 1.5%;
+}
+.redirecc-home a {
+  color: grey;
 }
 
 /*# sourceMappingURL=section-page.css.map */
