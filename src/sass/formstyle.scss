@@ -1,4 +1,4 @@
-.form-container {
+form {
     background-color: #7CEA72;
     text-align: center;
     margin-left: 5%;
@@ -7,19 +7,22 @@
     border-radius: 10px;
     padding: 5px;
     line-height: 55px;
+    
+    input {
+        width: 18rem;
+        height: 1.5rem;
+        background-color: #EBFFD3;
+        border-radius: 10px;
+        border: 1.4px solid black;
+    }
 }
-button {
+#button {
     background-color: #5CCD5A;
     border-radius: 10px;
     border: 1.4px solid black;
     width: 10rem;
-}
-input {
-    width: 18rem;
     height: 1.5rem;
-    background-color: #EBFFD3;
-    border-radius: 10px;
-    border: 1.4px solid black;
+    color: #E5FF48;
 }
 .exclusivo {
     color: rgb(34, 33, 33);
@@ -31,10 +34,6 @@ input {
     text-align: end;
     margin-right: 10vw;
 }
-.suscribir {
-    height: 1.5rem;
-    color: #E5FF48;
-}
 @media only screen and (min-width: 781px) and (max-width: 910px) {
     .exclusivo {
         font-size: 1.1rem;
@@ -44,7 +43,7 @@ input {
     .exclusivo {
         font-size: 1rem;
     }
-    .form-container {
+    form {
         line-height: 30px;
     }
 }
@@ -52,10 +51,7 @@ input {
     .exclusivo {
         font-size: 0.8rem;
     }
-    .form-container {
+    form {
         line-height: 30px;
-    }
-    nav {
-        height: auto;
     }
 }
