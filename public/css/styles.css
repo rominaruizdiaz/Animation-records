@@ -172,12 +172,21 @@ header > nav button {
     justify-content: space-around;
   }
 }
+@media only screen and (min-width: 360px) and (max-width: 500px) {
+  nav button {
+    height: 1.8rem !important;
+    width: 5rem !important;
+    border-radius: 10px;
+    border: none;
+    font-size: 0.8rem !important;
+  }
+}
 .container-carousel {
   display: flex;
   justify-content: space-around;
   align-items: center;
   width: 100%;
-  height: 27rem;
+  height: 22rem;
   margin-top: 5rem;
 }
 
@@ -287,12 +296,13 @@ header > nav button {
   font-size: 2rem;
   text-align: center;
   margin-top: 4%;
+  color: white;
 }
 
 .container-cards-categories {
   padding: 4.3rem;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
   gap: 3rem;
 }
 
@@ -448,8 +458,8 @@ footer {
   color: aliceblue;
 }
 
-@media only screen and (min-width: 360px) and (max-width: 569px) {
-  #container {
+@media only screen and (min-width: 360px) and (max-width: 580px) {
+  footer {
     display: flex;
     flex-direction: column;
   }
@@ -463,6 +473,246 @@ footer {
   margin: 10px;
   font-style: normal;
   color: aliceblue;
+}
+
+.like-button {
+  border: none;
+  background-color: white;
+  color: #c0c0c0;
+  width: 2rem;
+  height: 2rem;
+}
+.like-button i {
+  margin-top: 3rem;
+  margin-left: 15rem;
+  font-size: 1.5rem;
+  color: #c0c0c0;
+}
+.like-button i.liked {
+  color: red;
+}
+.like-button:hover {
+  color: rgb(147, 147, 147);
+}
+.like-button.clicked i {
+  color: red;
+}
+
+.cart-button {
+  width: 9rem !important;
+  height: 3rem !important;
+  font-size: 1.5rem !important;
+  background-color: rgb(74, 173, 73);
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  display: inline-block;
+  border-radius: 10px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #155F87;
+  margin-left: -120%;
+  min-width: 20rem !important;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content li {
+  padding: 12px 16px;
+  cursor: pointer;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.reset-button {
+  background-color: rgb(0, 255, 234);
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  display: inline-block;
+  font-size: 1rem;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+}
+
+.reset-button:hover {
+  background-color: darkred;
+  color: white;
+}
+
+.displayNav {
+  position: relative;
+}
+
+#contadorCarrito {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+@media screen and (max-width: 900px) {
+  #contadorCarrito {
+    position: absolute;
+    top: 60%;
+    left: 27%;
+    transform: translate(-50%, -50%);
+    color: white;
+  }
+}
+@media screen and (max-width: 530px) {
+  .cart-button {
+    width: 5rem !important;
+    height: 2.5rem !important;
+    font-size: 1.5rem !important;
+    background-color: rgb(74, 173, 73);
+    color: white;
+    padding: 8px 16px;
+    text-align: center;
+    display: inline-block;
+    border-radius: 10px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+  }
+}
+.container-detail {
+  display: flex;
+  background-color: white;
+  width: 80.5%;
+  height: 70%;
+  display: flex;
+  margin-left: 6%;
+  margin-top: 2%;
+  border-radius: 1rem;
+  padding: 3rem;
+  margin-bottom: 2%;
+}
+.container-detail img {
+  width: 50%;
+  height: auto !important;
+  margin-left: 3%;
+  float: left;
+  margin-right: 2%;
+}
+.container-detail h3, .container-detail p {
+  margin-top: 5%;
+  color: black;
+}
+.container-detail .description {
+  text-align: justify;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  text-decoration: none;
+}
+.container-detail .cant {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  border-bottom: 1px solid #C2C6CB;
+  border-top: 1px solid #C2C6CB;
+  font-size: 1rem;
+}
+.container-detail .cant .calculator {
+  width: 50%;
+  margin: 0 auto;
+  direction: row;
+  display: flex;
+  margin-right: 2rem;
+  margin-left: 2rem;
+}
+.container-detail .cant .calculator .display {
+  width: 100%;
+  text-align: center;
+  font-size: 1rem;
+  margin-top: 5%;
+}
+.container-detail .cant .calculator button {
+  margin-top: 5%;
+  display: block;
+  width: 3rem;
+  height: 2rem;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+}
+.container-detail .cant .calculator button:hover {
+  color: aquamarine;
+}
+
+.miniature {
+  justify-content: space-around;
+  align-content: end;
+  width: 60%;
+  height: 20%;
+  flex-wrap: wrap;
+  background-color: white;
+  margin-top: 10%;
+  margin-bottom: 20%;
+}
+.miniature .detail {
+  width: 15%;
+  height: 15%;
+}
+.miniature .detail:hover {
+  border-color: black !important;
+  border: 0.15em solid !important;
+  border-radius: 5%;
+}
+
+@media screen and (max-width: 900px) {
+  .container-detail {
+    display: flex;
+    background-color: white;
+    width: 65%;
+    height: 70%;
+    display: flex;
+    margin-left: 12%;
+    margin-top: 2%;
+    border-radius: 1rem;
+    padding: 3rem;
+    margin-bottom: 2%;
+  }
+  .container-detail .description {
+    margin-top: 3%;
+    margin-bottom: 3%;
+    text-decoration: none;
+  }
+  .container-detail .miniature {
+    justify-content: space-around;
+    align-content: end;
+    width: 60%;
+    height: 10%;
+    flex-wrap: wrap;
+    background-color: white;
+    margin-top: 10%;
+    margin-bottom: 20%;
+  }
+  .container-detail .miniature .detail {
+    width: 15%;
+    height: 15%;
+  }
+  .container-detail .miniature .detail:hover {
+    border-color: black !important;
+    border: 0.15em solid !important;
+    border-radius: 5%;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

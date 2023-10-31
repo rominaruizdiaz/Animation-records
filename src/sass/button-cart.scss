@@ -67,3 +67,19 @@
       transform: translate(-50%, -50%);
       color: white;
   }}
+
+  @media screen and (max-width: 530px) {
+    .cart-button{
+      width: 5rem !important;
+      height: 2.5rem !important;
+      font-size: 1.5rem !important;
+      background-color: rgb(74, 173, 73);
+      color: white;
+      padding: 8px 16px;
+      text-align: center;
+      display: inline-block;
+      border-radius: 10px;
+      margin: 4px 2px;
+      transition-duration: 0.4s;
+    }
+  }
