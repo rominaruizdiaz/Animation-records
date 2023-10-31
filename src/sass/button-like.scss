@@ -1,0 +1,24 @@
+.like-button {
+    border: none;
+    background-color: white;
+    color: #c0c0c0;
+    width: 2rem;
+    height: 2rem;
+    i {
+      margin-top: 3rem;
+      margin-left: 15rem;
+      font-size: 1.5rem;
+      color: #c0c0c0;
+      &.liked {
+        color: red;
+      }
+    }
+    &:hover {
+      color: rgb(147, 147, 147);
+    }
+    &.clicked {
+      i {
+        color: red;
+      }
+    }
+  }
