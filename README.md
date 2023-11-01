@@ -6,11 +6,11 @@
 
 <h2>Project Screenshots:</h2>
 
-<img src="../Animation-records/public/assets/imagenes/Home.png" alt="project-screenshot" width="1280" height="800/">
+<img src="../public/assets/imagenes/Home.png" alt="project-screenshot" width="1280" height="800/">
 
-<img src="../Animation-records/public/assets/imagenes/Gallery.png" alt="project-screenshot" width="1280" height="800/">
+<img src="../public/assets/imagenes/Gallery.png" alt="project-screenshot" width="1280" height="800/">
 
-<img src="../Animation-records/public/assets/imagenes/Product.png" alt="project-screenshot" width="1280" height="800/">
+<img src="../public/assets/imagenes/Product.png" alt="project-screenshot" width="1280" height="800/">
 
 <h2>🍰 Contribution Guidelines:</h2>
 
