@@ -166,4 +166,15 @@ header {
     }
   }
 }
-
+@media only screen and (min-width: 279px) and (max-width:500px){
+  nav {
+    button {
+      height: 1.8rem !important;
+      width: 5rem !important;
+      border-radius: 10px;
+      border: none;
+      font-size: 0.8rem !important;
+    }
+  }
+  
+}
