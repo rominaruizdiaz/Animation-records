@@ -9,8 +9,8 @@ form {
     line-height: 55px;
     
     input {
-        width: 18rem;
-        height: 1.5rem;
+        width: 40%;
+        height: 1.8rem;
         background-color: #EBFFD3;
         border-radius: 10px;
         border: 1.4px solid black;
@@ -20,8 +20,8 @@ form {
     background-color: #5CCD5A;
     border-radius: 10px;
     border: 1.4px solid black;
-    width: 10rem;
-    height: 1.5rem;
+    width: 15rem;
+    height: 1.8rem;
     color: #E5FF48;
 }
 .exclusivo {
@@ -32,11 +32,20 @@ form {
 .cancela {
     font-size: 0.7rem;
     text-align: end;
-    margin-right: 10vw;
+    margin-right: 12.5vw;
 }
+
 @media only screen and (min-width: 781px) and (max-width: 910px) {
     .exclusivo {
         font-size: 1.1rem;
+    }
+
+    input {
+        width: 75% !important;
+        height: 1.5rem;
+        background-color: #EBFFD3;
+        border-radius: 10px;
+        border: 1.4px solid black;
     }
 }
 @media only screen and (min-width: 570px) and (max-width:780px) {
@@ -46,7 +55,10 @@ form {
     form {
         line-height: 30px;
     }
+
+  
 }
+
 @media only screen and (min-width: 360px) and (max-width:569px) {
     .exclusivo {
         font-size: 0.8rem;
@@ -54,4 +66,6 @@ form {
     form {
         line-height: 30px;
     }
+
+   
 }

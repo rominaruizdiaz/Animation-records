@@ -16,11 +16,13 @@ header {
   background-color: #155F87;
   height: 7rem;
   display: flex;
-  align-items: center;
+  align-items: baseline;
   justify-content: space-between;
+  padding: 0.8%;
 }
 header .header-logo > img {
   margin-left: 3rem;
+  margin-top: 0.5rem;
 }
 header > nav {
   display: flex;
@@ -64,11 +66,12 @@ header > nav > ul > li:hover > ul {
   opacity: 1;
 }
 header > nav button {
-  height: 2rem;
-  width: 8rem;
+  height: 1.5rem;
+  width: 5.5rem;
   border-radius: 10px;
   border: none;
-  font-size: 1.3rem;
+  font-size: 0.9rem;
+  cursor: pointer;
 }
 
 #home {
@@ -373,8 +376,8 @@ form {
   line-height: 55px;
 }
 form input {
-  width: 18rem;
-  height: 1.5rem;
+  width: 40%;
+  height: 1.8rem;
   background-color: #EBFFD3;
   border-radius: 10px;
   border: 1.4px solid black;
@@ -384,8 +387,8 @@ form input {
   background-color: #5CCD5A;
   border-radius: 10px;
   border: 1.4px solid black;
-  width: 10rem;
-  height: 1.5rem;
+  width: 15rem;
+  height: 1.8rem;
   color: #E5FF48;
 }
 
@@ -398,12 +401,19 @@ form input {
 .cancela {
   font-size: 0.7rem;
   text-align: end;
-  margin-right: 10vw;
+  margin-right: 12.5vw;
 }
 
 @media only screen and (min-width: 781px) and (max-width: 910px) {
   .exclusivo {
     font-size: 1.1rem;
+  }
+  input {
+    width: 75% !important;
+    height: 1.5rem;
+    background-color: #EBFFD3;
+    border-radius: 10px;
+    border: 1.4px solid black;
   }
 }
 @media only screen and (min-width: 570px) and (max-width: 780px) {
@@ -595,7 +605,7 @@ footer {
 .container-detail {
   display: flex;
   background-color: white;
-  width: 80.5%;
+  width: 79.5%;
   height: 70%;
   display: flex;
   margin-left: 6%;

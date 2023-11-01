@@ -2,7 +2,7 @@
 .container-detail {
   display: flex;
   background-color: white;
-  width: 80.5%;
+  width: 79.5%;
   height: 70%;
   display: flex;
   margin-left: 6%;
@@ -204,11 +204,13 @@ header {
   background-color: #155F87;
   height: 7rem;
   display: flex;
-  align-items: center;
+  align-items: baseline;
   justify-content: space-between;
+  padding: 0.8%;
 }
 header .header-logo > img {
   margin-left: 3rem;
+  margin-top: 0.5rem;
 }
 header > nav {
   display: flex;
@@ -252,11 +254,12 @@ header > nav > ul > li:hover > ul {
   opacity: 1;
 }
 header > nav button {
-  height: 2rem;
-  width: 8rem;
+  height: 1.5rem;
+  width: 5.5rem;
   border-radius: 10px;
   border: none;
-  font-size: 1.3rem;
+  font-size: 0.9rem;
+  cursor: pointer;
 }
 
 #home {
@@ -360,6 +363,15 @@ header > nav button {
     justify-content: space-around;
   }
 }
+@media only screen and (min-width: 279px) and (max-width: 500px) {
+  nav button {
+    height: 1.8rem !important;
+    width: 5rem !important;
+    border-radius: 10px;
+    border: none;
+    font-size: 0.8rem !important;
+  }
+}
 footer {
   background-color: #155F87;
   text-align: center;
@@ -396,8 +408,8 @@ footer {
   color: aliceblue;
 }
 
-@media only screen and (min-width: 360px) and (max-width: 569px) {
-  #container {
+@media only screen and (min-width: 279px) and (max-width: 580px) {
+  footer {
     display: flex;
     flex-direction: column;
   }
@@ -513,6 +525,21 @@ footer {
     left: 27%;
     transform: translate(-50%, -50%);
     color: white;
+  }
+}
+@media screen and (max-width: 530px) {
+  .cart-button {
+    width: 5rem !important;
+    height: 2.5rem !important;
+    font-size: 1.5rem !important;
+    background-color: rgb(74, 173, 73);
+    color: white;
+    padding: 8px 16px;
+    text-align: center;
+    display: inline-block;
+    border-radius: 10px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
   }
 }
 
