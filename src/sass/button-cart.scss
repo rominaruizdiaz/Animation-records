@@ -3,7 +3,6 @@
     margin-left: 30%;
     transition-duration: 0.4s;
   }
-  
   .dropdown {
     position: relative;
     display: inline-block;
@@ -27,13 +26,12 @@
   .reset-button {
     background-color: rgb(0, 255, 234);
     color: white;
-    padding: 8px 16px;
+
     border: none;
     cursor: pointer;
     text-align: center;
-    display: inline-block;
+    margin-left: 33%;
     font-size: 1rem;
-    margin: 4px 2px;
     transition-duration: 0.4s;
   }
   .reset-button:hover {
