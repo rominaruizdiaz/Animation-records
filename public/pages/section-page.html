@@ -30,7 +30,17 @@
                 <li><a href="">Toy Story</a></li>
               </ul>
           </li>
-            <li>
+          <li>
+            <a href="#form">
+              <button id="button-suscribe">
+                <img id="button-star-figure" src="/public/assets/imagenes/Star.png" alt="star">
+                <div id="button-suscribe-side">
+                  Suscríbete
+                </div>
+              </button>
+            </a>
+        </li>
+          <li>
             <div class="dropdown">
               <button id="cart-btn-nav"class="dropbtn">Carrito<i id="bascket" class="fa-solid fa-basket-shopping" style="color: #b6bcc8;"></i></button>
               <ul class="dropdown-content">
@@ -173,12 +183,12 @@
 			<-- back
 			</a>
     	</p>
-    	<form onsubmit="subscribe()">
-		<p class="exclusivo">Contenidos originales exclusivos, películas de éxito y series para maratonear</p>
-		<label for="emailConteiner">Email:</label>
-		<input id="emailConteiner" name="emailConteiner" type="email" placeholder="  username@example.com" required>
-		<button id="button" type="submit">Suscríbete</button>
-		<p class="cancela">* Cancela cuando quieras</p>
+    <form id="form" onsubmit="subscribe()">
+      <p class="exclusivo">Contenidos originales exclusivos, películas de éxito y series para maratonear</p>
+      <label for="emailConteiner">Email:</label>
+      <input id="emailConteiner" name="emailConteiner" type="email" placeholder="username@example.com" required>
+      <button id="button" type="submit">Suscríbete</button>
+      <p class="cancela">* Cancela cuando quieras</p>
 		</form>
   	</main>
   	<footer id="container">
@@ -211,7 +221,7 @@
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/simplePagination.js/1.6/jquery.simplePagination.min.js"></script>
-    <script src="../js/galery.js"></script>
+  <script src="../js/galery.js"></script>
 	<script src="../js/form.js"></script>
   <script src="../js/resetCartButton.js"></script>
   <script src="../js/counter.js"></script>

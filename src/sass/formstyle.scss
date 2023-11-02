@@ -7,13 +7,16 @@ form {
     border-radius: 10px;
     padding: 5px;
     line-height: 55px;
-    
+
     input {
         width: 40%;
         height: 1.8rem;
         background-color: #EBFFD3;
         border-radius: 10px;
         border: 1.4px solid black;
+    }
+    #emailConteiner {
+        padding: 0 10px;
     }
 }
 #button {
