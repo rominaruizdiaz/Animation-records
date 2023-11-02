@@ -29,8 +29,11 @@ Este proyecto se desarrolla en una aplicación web de comercio electrónico que 
 ![Home](https://github.com/rominaruizdiaz/Animation-records/assets/127294546/cc38f382-00b1-4b35-9aae-2b8a5c864c90)
 ![Gallery](https://github.com/rominaruizdiaz/Animation-records/assets/127294546/42de828c-13d8-47cc-805d-8aff8402bd4b)
 ![Product](https://github.com/rominaruizdiaz/Animation-records/assets/127294546/a3d56cff-2c5b-40b1-8b47-c5e59c241e0a)
-
-
+<h2>Package install:</h2>
+<li>Es necesario que se instale el siguiente paquete npm install sass y se usaran los siguientes scripts  </li>
+ "sass-w": "sass --watch ./src/sass/styles.scss ./public/css/styles.css",
+    "sass": "sass --watch ./src/sass/section-page.scss ./public/css/section-page.css",
+    "sass-d": "sass --watch ./src/sass/product-detail.scss ./public/css/product-detail.css"
 <h2>🍰 Contribution Guidelines:</h2>
 
 Romina Suarez Diaz Erika Gamarra Luis Pardo Carlos Uribe Stella González
