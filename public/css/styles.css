@@ -319,6 +319,17 @@ header > nav button {
   height: auto;
 }
 
+.category {
+  border-radius: 6%;
+  height: min-content;
+  position: relative;
+  display: inline-block;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 .category h2 {
   position: absolute;
   color: white;
